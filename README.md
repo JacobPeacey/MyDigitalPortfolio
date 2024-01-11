@@ -1,2 +1,2 @@
-This is a repository to keep track of changes in my digital Portfolio College Project. Github was my chosen form of Source Control as i have had past experience. 
+This is a repository to keep track of changes in my digital Portfolio College Project. Github was my chosen form of Source Control as i have had past experience. The Digital Portfolio as a final Project Shoud contain the following Pages and subpages. Being a Work in Development Project. These are of Course subject to change, alteration or complete Cancellation. Throughout the course of development i will be using the .README file to fully keep track of development, while liasing with college staff
  
