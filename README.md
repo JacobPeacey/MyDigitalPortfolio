@@ -11,5 +11,9 @@ The Pages in this document, in no specific order are;
 - Work, employment and any work Experience ive completed... Centre VR, You are the monster project?
 - A table showcasing the qualification i have or, those that i am currently working towards, updated as and when.
 
-This whole portfolio is a way for me to showcase my skill and any projects I am working on. As intended, it allows employers to view my work on a website that may in the future be hosted on the world-wide web. Furthermore...
- 
+This whole portfolio is a way for me to showcase my skill and any projects I am working on. As intended, it allows employers to view my work on a website that may in the future be hosted on the world-wide web. Furthermore, It can also act as a hub for me to effectively document my life outside of work.
+
+      Secondly, the contact me page, will not only have a form to contact me with, I am plannig on adding buttons which direct the user to both my Professional Social Media Pages, and personal Page though a distinctly Styled Page.
+
+
+      For my Projects pages. I am hoping to be able to link my Personal Projects, such as Those on the App store... Or those currently on Testflight. This hopefully will increase those apps engagement.
