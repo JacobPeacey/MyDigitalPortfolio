@@ -2,15 +2,11 @@
 <html lang="en">
 
 <head>
-    
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!button icon pack...>
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             margin: 0;
@@ -40,81 +36,73 @@
             background-color: #4CAF50;
             color: white;
         }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form {
+            width: 300px;
+            margin-top: 20px;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
 <body>
-<style>
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    form {
-        width: 300px;
-        /* Set the width of the form as needed */
-        margin-top: 20px;
-        /* Adjust the margin as needed */
-    }
+    <div class="navbar">
+        <a href="HomePage.html" class="active">Home</a>
+        <a href="AboutMe.html">About</a>
+        <a href="MyDigitalCV.html">My CV</a>
+        <a href="ContactMe.html">Contact</a>
+        <a href="GeneralProjectsLandingPage.html">Projects</a>
+        <a href="Trips.html">Trips and Experiences</a>
+        <a href="Qualifications.html">Education and qualifications</a>
+        <a href="Hobbies.html">Hobbies</a>
+        <a href="Work.html">Work Experience</a>
+    </div>
 
-    label {
-        margin-bottom: 5px;
-        /* Adjust the margin as needed */
-    }
+    <div class="container">
+        <form action="action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="First Name">
 
-    input,
-    select,
-    textarea {
-        width: 100%;
-        /* Make form elements take up full width */
-        margin-bottom: 10px;
-        /* Adjust the margin as needed */
-    }
-</style>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="Surname" placeholder="Surname">
 
-<div class="container">
-    <form action="action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="First Name">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <!-- ... other options ... -->
+            </select>
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="Surname" placeholder="Surname">
+            <label for="Message">Message</label>
+            <textarea id="Message" name="Message" placeholder="What's Up?.." style="height: 200px"></textarea>
 
-        <label for="country">Country</label>
-        <select id="country" name="country">
-            <option value="uk">United Kingdom</option>
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-        <option value="germany">Germany</option>
-        <option value="france">France</option>
-        <option value="japan">Japan</option>
-        <option value="china">China</option>
-        <option value="india">India</option>
-        <option value="brazil">Brazil</option>
-        <option value="russia">Russia</option>
-        <option value="south_korea">South Korea</option>
-        <option value="south_africa">South Africa</option>
-        <option value="mexico">Mexico</option>
-        <option value="italy">Italy</option>
-        <option value="spain">Spain</option>
-        <option value="argentina">Argentina</option>
-        <option value="netherlands">Netherlands</option>
-        <option value="sweden">Sweden</option>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 
-        </select>
-
-        <label for="Message">Message</label>
-        <textarea id="Message" name="Message" placeholder="What's Up?.." style="height: 200px"></textarea>
-
-        <input type="submit" value="Submit">
-    </form>
-</div>
-<div>
-    <h3>Prefer to use social Media?</h3>
-</div>
+    <div>
+        <h3>Prefer to use social Media?</h3>
+        <a href="https://twitter.com/jacob39151215" class="fa fa-twitter"></a>
+    </div>
 
 
+</body>
 
 </html>
