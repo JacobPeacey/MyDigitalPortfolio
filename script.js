@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     const prefixElement = document.getElementById('prefix-text');
     const contentElement = document.getElementById('content-text');
@@ -7,31 +8,45 @@ document.addEventListener('DOMContentLoaded', function () {
         "Swift Student Challenge Contender.",
         "Keen Coder.",
     ];
-    const prefixText = "I'm a ";
-    const finalText = "I'm a Keen Coder.";
+    const prefixText = "I'm an ";
     let contentIndex = 0;
     let charIndex = 0;
+    let isDeleting = false;
 
     function type() {
-        const currentText = prefixText + textContents[contentIndex];
+        const currentText = isDeleting ? prefixText + textContents[contentIndex].substring(0, charIndex - 1) : prefixText + textContents[contentIndex].substring(0, charIndex + 1);
 
         prefixElement.innerHTML = prefixText;
-        contentElement.innerHTML = currentText.substring(0, charIndex + 1);
-        charIndex++;
+        contentElement.innerHTML = currentText;
 
-        if (charIndex <= currentText.length) {
-            setTimeout(() => type(), 50); // Typing speed
+        if (isDeleting) {
+            charIndex--;
         } else {
-            setTimeout(() => showFinalText(), 1500); // Delay before showing the final text
+            charIndex++;
         }
-    }
 
-    function showFinalText() {
-        contentElement.innerHTML = finalText;
+        if (!isDeleting && charIndex <= currentText.length) {
+            setTimeout(() => type(), 50); // Typing speed
+        } else if (!isDeleting && charIndex > currentText.length) {
+            isDeleting = true;
+            setTimeout(() => type(), 1000); // Delay before starting the delete animation
+        } else if (isDeleting && charIndex > 0) {
+            isDeleting = false;
+            setTimeout(() => type(), 50); // Typing speed during delete animation
+        } else {
+            contentIndex = (contentIndex + 1) % textContents.length; // Loop back to the first text if reached the end
+            isDeleting = false;
+            setTimeout(() => type(), 1500); // Delay before typing the next text
+        }
     }
 
     type();
 });
+
+
+
+
+
 
 
 
