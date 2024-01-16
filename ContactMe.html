@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     <style>
+        /* Your CSS styles here */
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
@@ -34,73 +37,82 @@
             color: white;
         }
 
+        /* Added style for the container to make the form vertical */
         .container {
-            margin: 20px;
+            margin-top: 20px;
+            /* Adjust as needed */
+            width: 50%;
+            /* Adjust the width of the form container */
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        /* Style the form elements to be vertical */
-        form {
-            display: flex;
-            flex-direction: column;
-            max-width: 300px;
-            margin: auto;
-        }
-
+        /* Style for the form labels */
         label {
-            margin-bottom: 8px;
+            display: block;
+            margin-bottom: 5px;
         }
 
+        /* Style for the form input and select elements */
         input,
         select,
         textarea {
-            margin-bottom: 16px;
+            width: 100%;
+            /* Make the input fields and textarea full width */
             padding: 8px;
+            margin-bottom: 10px;
             box-sizing: border-box;
+        }
+
+        .fa {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
         }
     </style>
 </head>
 
 <body>
     <div class="navbar">
-        <a href="HomePage.html" class="active">Home</a>
-        <a href="AboutMe.html">About</a>
-        <a href="MyDigitalCV.html">My CV</a>
-        <a href="ContactMe.html">Contact</a>
-        <a href="GeneralProjectsLandingPage.html">Projects</a>
-        <a href="Trips.html">Trips and Experiences</a>
-        <a href="Qualifications.html">Education and qualifications</a>
-        <a href="Hobbies.html">Hobbies</a>
-        <a href="Work.html">Work Experience</a>
+    <a href="HomePage.html" class="active">Contact</a>
+    <a href="AboutMe.html">About</a>
+    <a href="MyDigitalCV.html">My CV</a>
+    <a href="ContactMe.html">Contact</a>
+    <a href="GeneralProjectsLandingPage.html">Projects</a>
+    <a href="Trips.html">Trips and Experiences</a>
+    <a href="Qualifications.html">Education and qualifications</a>
+    <a href="Hobbies.html">Hobbies</a>
+    <a href="Work.html">Work Experience</a>
     </div>
 
-    <div class="container">
-        <form action="action_page.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="First Name">
+    <h1>Contact</h1>
+    <form 
+        <div class="container">
+           
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="First Name">
+        
+        
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="Surname" placeholder="Surname">
+        
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="uk">United Kingdom</option>
+                    <option value="australia">Australia</option>
+                    <!-- ... other options ... -->
+                </select>
+        
+                <label for="Message">Message</label>
+                <textarea id="Message" name="Message" placeholder="What's Up?.." style="height: 200px"></textarea>
+        
+                <input type="submit" value="Submit">
+            </form>
+        </div>
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="Surname" placeholder="Surname">
-
-            <label for="country">Country</label>
-            <select id="country" name="country">
-                <option value="uk">United Kingdom</option>
-                <option value="australia">Australia</option>
-                <!-- ... other options ... -->
-            </select>
-
-            <label for="Message">Message</label>
-            <textarea id="Message" name="Message" placeholder="What's Up?.." style="height: 200px"></textarea>
-
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-
-    <div>
-        <h3>Prefer to use social Media?</h3>
-        <a href="https://twitter.com/jacob39151215" class="fa fa-twitter"></a>
-        <a href="https://www.linkedin.com/in/jacob-peacey-02745720b/" class="fa fa-linkedin"></a>
-        <a href="https://www.linkedin.com/in/jacob-peacey-02745720b/" class="fa fa-instagram"></a>
-    </div>
+    </form>
 </body>
-
 </html>
