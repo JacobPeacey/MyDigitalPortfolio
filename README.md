@@ -17,3 +17,5 @@ This whole portfolio is a way for me to showcase my skill and any projects I am 
 
 
       For my Projects pages. I am hoping to be able to link my Personal Projects, such as Those on the App store... Or those currently on Testflight. This hopefully will increase those apps engagement.
+
+      Animations are also an element of interest, suchas like those found in canva with a form of shadow effect and blooming at hover. This would require CSS 
