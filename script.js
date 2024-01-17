@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "Swift Student Challenge Contender.",
         "Keen Coder.",
     ];
-    const prefixText = "I'm an ";
+    const prefixText = "I'm an";
     let contentIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
