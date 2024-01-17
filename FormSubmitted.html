@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <style>
+    /* Add this style to make the form vertical */
+    #myForm {
+      max-width: 400px; /* Adjust the max-width as needed */
+      margin: auto;
+    }
+
+    /* Add style for form fields and labels */
+    #myForm div {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+
+    #myForm label {
+      margin-bottom: 5px;
+    }
+
+    #myForm input,
+    #myForm textarea {
+      padding: 8px;
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    #myForm input[type="submit"] {
+      background-color: #444c44;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Style for textarea */
+    #myForm textarea {
+      resize: vertical;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="myForm">
+    <div>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="First Name">
+    </div>
+    <div>
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="Surname" placeholder="Surname">
+    </div>
+    <div>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="uk">United Kingdom</option>
+            <option value="germany">Germany</option>
+            <option value="france">France</option>
+            <option value="japan">Japan</option>
+        <   <option value="china">China</option>
+            <option value="india">India</option>
+            <option value="brazil">Brazil</option>
+            <option value="russia">Russia</option>
+            <option value="south_korea">South Korea</option>
+            <option value="south_africa">South Africa</option>
+            <option value="mexico">Mexico</option>
+            <option value="italy">Italy</option>
+            <option value="spain">Spain</option>
+            <option value="argentina">Argentina</option>
+            <option value="netherlands">Netherlands</option>
+            <option value="sweden">Sweden</option>
+        </select>
+    </div>
+    <div>
+      <label for="Message">Message</label>
+      <textarea id="Message" name="Message" placeholder="What's Up?.." style="height: 200px"></textarea>
+    </div>
+    <input type="submit" value="Submit">
+
+   
+  </form>
+
+  <script>
+    document.getElementById('myForm').addEventListener('submit', function (event) {
+      // Prevent the default form submission
+      event.preventDefault();
+
+      // Redirect to the homepage
+      window.location.href = 'ThankyouFS.html';
+    });
+  </script>
+
+</body>
+</html>
