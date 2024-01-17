@@ -18,4 +18,23 @@ This whole portfolio is a way for me to showcase my skill and any projects I am 
 
       For my Projects pages. I am hoping to be able to link my Personal Projects, such as Those on the App store... Or those currently on Testflight. This hopefully will increase those apps engagement.
 
-      Animations are also an element of interest, suchas like those found in canva with a form of shadow effect and blooming at hover. This would require CSS 
+      Animations are also an element of interest, suchas like those found in canva with a form of shadow effect and blooming at hover. This would require CSS.
+
+      Added 17/01/2024 @ 11:48:47:
+
+            The website now has a static footer which allows for me to visual implement the element and decide at a later time further down the pipeline where i want the elements to be placed.     
+
+                  My Sitemap is created to not only allow me to find pages quickly, but to also aid in SEO and indexing in the future, if and when the site is published. This readme.md is also linked to this projects Github Repository 
+
+                       In the contact me form, which has now had its styling asseta confirmed... With the exception of the social media buttons to be used. However, i am targeting for these to be:
+
+                            On my personal Contact Me Page:
+                                     Personal Instagram
+                                     Personal Facebook
+                                     Personal X (Formerly Twitter)
+
+                        
+                              And on my Professioal Contact Me page:
+                                     Professional Instagram
+                                     Professional X (Formerly Twitter)
+                                    
