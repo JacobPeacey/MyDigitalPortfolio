@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Settings</title>
+    <!-- Add your CSS styles or link to an external stylesheet -->
+</head>
+<body>
+    <header>
+        <h1>Accessibility Settings</h1>
+    </header>
+    <main>
+        <label for="font-size">Font Size:</label>
+        <input type="range" id="font-size" min="80" max="200" step="10">
+        
+        <label for="contrast">Contrast:</label>
+<select id="contrast">
+    <option value="normal">Normal</option>
+    <option value="high">High</option>
+</select>
+
+<label for="dark-mode">Dark Mode:</label>
+<input type="checkbox" id="dark-mode">
+<style>
+    .dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    filter: invert(100%);
+}
+
+/* Light Mode Styles (default) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+</style>
+<label for="keyboard-nav">Keyboard Navigation:</label>
+<input type="checkbox" id="keyboard-nav">
+
+    </main>
+    <footer>
+        <div class="footer">
+            <p>© Jacob Peacey 2024</p>
+        </div>
+    </footer>
+    </html>
+</body>
+
+<script>
+    document.getElementById('font-size').addEventListener('input', function() {
+        document.body.style.fontSize = this.value + '%';
+    });
+
+    document.getElementById('contrast').addEventListener('change', function() {
+        document.body.style.filter = (this.value === 'high') ? 'invert(1)' : 'none';
+    });
+
+    document.getElementById('dark-mode').addEventListener('change', function() {
+    document.body.classList.toggle('dark-mode', this.checked);
+});
+
+    document.getElementById('keyboard-nav').addEventListener('change', function() {
+        // Implement keyboard navigation changes here
+    });
+</script>
+</html>
