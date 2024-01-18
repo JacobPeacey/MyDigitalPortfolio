@@ -44,7 +44,18 @@
 
 <body>
     <div class="navbar">
-       <button><img src="https://tse4.mm.bing.net/th/id/OIP.7em-6PWWrEU3RJMyBf6VKgHaHa?rs=1&pid=ImgDetMain" alt="">
+    <button onclick="redirectToAnotherPage()">
+        <img src="Assets/Accessibility-icon-removebg-preview.png" alt="" style="width: 10px; height: 10px;">
+    </button>
+    
+    <script>
+        function redirectToAnotherPage() {
+            // Replace 'destination-page.html' with the actual URL of the page you want to redirect to
+            window.location.href = 'AccessibiltySettings.html';
+        }
+    </script>
+
+
         <a href="AboutMe.html">About</a>
     </button>
         <a href="HomePage.html" class="active"><i class="fas fa-home"></i>Home</a>
