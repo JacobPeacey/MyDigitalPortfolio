@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Trips and Experiences</title>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trips and Experiences</title>
     <style>
         body {
             margin: 0;
@@ -20,7 +20,7 @@
             display: block;
             color: white;
             text-align: center;
-            padding:  16px;
+            padding: 16px;
             text-decoration: none;
         }
 
@@ -33,53 +33,86 @@
             background-color: #3b17bd;
             color: white;
         }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            flex-direction: column;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ffffff;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #3b17bd;
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
-    <div class="navbar">
-        <button onclick="redirectToAnotherPage()">
-            <img src="Assets/Accessibility-icon-removebg-preview.png" alt="" style="width: 10px; height: 10px;">
-        </button>
-        
-        <script>
-            function redirectToAnotherPage() {
-                
-                window.location.href = 'AccessibiltySettings.html';
-            }
-        </script>
-          <a href="HomePage.html">Home</a>
-            <a href="AboutMe.html">About</a>
-            <a href="MyDigitalCV.html">My CV</a>
-            <a href="FormSubmitted.html">Contact Me</a>
-            <a href="GeneralProjectsLandingPage.html"
-            <a href="Trips.html">Trips and Experiences</a>
-            <a href="Qualifications.html">Education and qualifications</a>
-            <a href="Hobbies.html">Hobbies</a>
-            <a href="Work.html">Work Experience</a>
-            <a href="Units.html">Units</a>
-        
-    </div>
+<div class="navbar">
+    <button onclick="redirectToAnotherPage()">
+        <img src="Assets/Accessibility-icon-removebg-preview.png" alt="" style="width: 10px; height: 10px;">
+    </button>
 
-    
-    <div style="padding: 20px;">
+    <script>
+        function redirectToAnotherPage() {
+            window.location.href = 'AccessibiltySettings.html';
+        }
+    </script>
+
+    <a href="HomePage.html">Home</a>
+    <a href="AboutMe.html">About</a>
+    <div class="dropdown">
+        <a href="#" class="dropbtn">Trips and Experiences</a>
+        <div class="dropdown-content">
+            <a href="Trips/parga-greece.html">Greece 2023</a>
+            <a href="Trips/Florida23.html">Florida 2023</a>
+        </div>
     </div>
+    <a href="Qualifications.html">Education and qualifications</a>
+    <a href="Hobbies.html">Hobbies</a>
+    <a href="Work.html">Work Experience</a>
+    <a href="Units.html">Units</a>
+</div>
+
+<div style="padding: 20px;"></div>
+
+<div class="footer">
+    <p>[Copyright Symbol] Jacob Peacey 2024</p>
+    <a href="Sitemap.html" style="color: white;">Sitemap</a>
+</div>
 
 </body>
-<style>
-    .footer {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: #3b17bd;
-      color: white;
-      text-align: center;
-    }
-    </style>
-    
-    <div class="footer">
-      <p>Footer</p>
-    <a href="Sitemap.html" style="color: white;">Sitemap</a>
-    </div>
 </html>
