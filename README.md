@@ -11,7 +11,9 @@ The Pages in this document, in no specific order are;
 - Work, employment and any work Experience ive completed... Centre VR, You are the monster project?
 - A table showcasing the qualification i have or, those that i am currently working towards, updated as and when.
 - A sitemap which aids in SEO
-- A document which contains imprtant Snippets of code I have used
+- A document which contains important Snippets of code I have used
+- Links to App Store Projects nad Synced Co. organisation Page
+
 
 This whole portfolio is a way for me to showcase my skill and any projects I am working on. As intended, it allows employers to view my work on a website that may in the future be hosted on the world-wide web. Furthermore, It can also act as a hub for me to effectively document my life outside of work.
 
@@ -39,4 +41,5 @@ This whole portfolio is a way for me to showcase my skill and any projects I am 
                               And on my Professioal Contact Me page:
                                      Professional Instagram
                                      Professional X (Formerly Twitter)
+                                    
                                     
