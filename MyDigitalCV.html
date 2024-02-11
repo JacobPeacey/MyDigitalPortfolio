@@ -11,7 +11,7 @@
         }
 
         .navbar {
-            background-color: #3b17bd;
+            background-color: #3e3d42;
             overflow: hidden;
         }
 
@@ -20,34 +20,29 @@
             display: block;
             color: white;
             text-align: center;
-            padding:  16px;
+            padding: 16px;
             text-decoration: none;
         }
 
+        .navbar a i {
+            margin-right: 5px;
+        }
+
         .navbar a:hover {
-            background-color: #7c36c7;
+            background-color: #ffff;
             color: black;
         }
 
-        .navbar a.active {
-            background-color: #3b17bd;
-            color: white;
-        }
+        .navbar a.ac-color {
+    background-color: #3b17bd;
+    color: white;
+}
+
+
     </style>
 </head>
 
 <body>
-    <div class="navbar">
-        <button onclick="redirectToAnotherPage()">
-            <img src="Assets/Accessibility-icon-removebg-preview.png" alt="" style="width: 10px; height: 10px;">
-        </button>
-        
-        <script>
-            function redirectToAnotherPage() {
-                
-                window.location.href = 'AccessibiltySettings.html';
-            }
-        </script>
           <div class="navbar">
             <a href="HomePage.html" class="active">Home</a>
             <a href="AboutMe.html">About</a>
@@ -57,20 +52,13 @@
             <a href="Trips.html">Trips and Experiences</a>
             <div class="dropdown">
                 <a href="Qualifications.html">Qualifications</a>
-
                 <div class="dropdown-content">
-
                     <a href="MyDigitalCV.html">My CV</a>
-                    <a href="Work.html">Employment and Work Experience</a>
                 </div>
 
             <a href="Hobbies.html">Hobbies</a>
             <a href="Work.html">Work Experience</a>
         </div>
-</body>
-
-<body>
-<p>Here is my CV</p> <a href="Assets/About me Poster Final.pdf">CV link</a>
 </body>
 <style>
     .footer {
@@ -78,12 +66,11 @@
       left: 0;
       bottom: 0;
       width: 100%;
-      background-color: #3b17bd;
+      background-color: #342f44;
       color: white;
       text-align: center;
     }
     </style>
-
     <div class="footer">
     <p>© Jacob Peacey 2024</p>
     <a href="Sitemap.html" style="color: white;">Sitemap</a>
