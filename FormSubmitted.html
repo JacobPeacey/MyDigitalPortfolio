@@ -3,42 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
     <style>
-      body {
-          margin: 0;
-          font-family: 'Arial', sans-serif;
-      }
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
 
-      .navbar {
-          background-color: #3e3d42;
-          overflow: hidden;
-      }
+        .navbar {
+            background-color: #3e3d42;
+            overflow: hidden;
+        }
 
-      .navbar a {
-          float: left;
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 16px;
-          text-decoration: none;
-      }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
 
-      .navbar a i {
-          margin-right: 5px;
-      }
+        .navbar a i {
+            margin-right: 5px;
+        }
 
-      .navbar a:hover {
-          background-color: #ffff;
-          color: black;
-      }
+        .navbar a:hover {
+            background-color: #ffff;
+            color: black;
+        }
 
-      .navbar a.ac-color {
-  background-color: #3b17bd;
-  color: white;
-}
+        .navbar a.ac-color {
+            background-color: #3b17bd;
+            color: white;
+        }
 
+        #myForm {
+            max-width: 400px;
+            margin: auto;
+        }
 
-  </style>
+        #myForm div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        #myForm label {
+            margin-bottom: 5px;
+        }
+
+        #myForm input,
+        #myForm textarea,
+        #myForm select {
+            padding: 8px;
+            box-sizing: border-box;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        #myForm input[type="submit"] {
+            background-color: #444c44;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Style for textarea */
+        #myForm textarea {
+            resize: vertical;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #3e3d42;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -53,124 +104,60 @@
         <a href="Hobbies.html">Hobbies</a>
         <a href="Work.html">Work Experience</a>
     </div>
+
+    <form id="myForm">
+        <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="First Name">
+        </div>
+        <div>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="Surname" placeholder="Surname">
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="uk">United Kingdom</option>
+                <option value="germany">Germany</option>
+                <option value="france">France</option>
+                <option value="japan">Japan</option>
+                <option value="china">China</option>
+                <option value="india">India</option>
+                <option value="brazil">Brazil</option>
+                <option value="russia">Russia</option>
+                <option value="south_korea">South Korea</option>
+                <option value="south_africa">South Africa</option>
+                <option value="mexico">Mexico</option>
+                <option value="italy">Italy</option>
+                <option value="spain">Spain</option>
+                <option value="argentina">Argentina</option>
+                <option value="netherlands">Netherlands</option>
+                <option value="sweden">Sweden</option>
+            </select>
+        </div>
+        <div>
+            <label for="Message">Message</label>
+            <textarea id="Message" name="Message" placeholder="What's Up?.." style="height: 200px"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="footer">
+        <p>© Jacob Peacey 2024</p>
+        <a href="Sitemap.html">Sitemap</a>
+    </div>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function (event) {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            // Redirect to the thank you page
+            window.location.href = 'ThankyouFS.html';
+        });
+    </script>
 </body>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Me</title>
-  <style>
-    #myForm {
-      max-width: 400px; 
-      margin: auto;
-    }
-    #myForm div {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 10px;
-    }
-
-    #myForm label {
-      margin-bottom: 5px;
-    }
-
-    #myForm input,
-    #myForm textarea {
-      padding: 8px;
-      box-sizing: border-box;
-      width: 100%;
-      margin-bottom: 10px;
-    }
-
-    #myForm input[type="submit"] {
-      background-color: #444c44;
-      color: white;
-      cursor: pointer;
-    }
-
-    /* Style for textarea */
-    #myForm textarea {
-      resize: vertical;
-    }
-  </style>
-</head>
-<body>
-  <form id="myForm">
-    <div>
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="First Name">
-    </div>
-    <div>
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="Surname" placeholder="Surname">
-    </div>
-    <div>
-        <label for="country">Country</label>
-        <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-            <option value="uk">United Kingdom</option>
-            <option value="germany">Germany</option>
-            <option value="france">France</option>
-            <option value="japan">Japan</option>
-        <   <option value="china">China</option>
-            <option value="india">India</option>
-            <option value="brazil">Brazil</option>
-            <option value="russia">Russia</option>
-            <option value="south_korea">South Korea</option>
-            <option value="south_africa">South Africa</option>
-            <option value="mexico">Mexico</option>
-            <option value="italy">Italy</option>
-            <option value="spain">Spain</option>
-            <option value="argentina">Argentina</option>
-            <option value="netherlands">Netherlands</option>
-            <option value="sweden">Sweden</option>
-        </select>
-    </div>
-    <div>
-      <label for="Message">Message</label>
-      <textarea id="Message" name="Message" placeholder="What's Up?.." style="height: 200px"></textarea>
-    </div>
-    <input type="submit" value="Submit">
-
-   
-  </form>
-
-  <script>
-    document.getElementById('myForm').addEventListener('submit', function (event) {
-      // Prevent the default form submission
-      event.preventDefault();
-
-      // Redirect to the homepage
-      window.location.href = 'ThankyouFS.html';
-    });
-  </script>
-</body>
-<style>
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #3b17bd;
-    color: white;
-    text-align: center;
-  }
-  </style>
-
-  <style>
-    .footer {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: #3e3d42;
-      color: white;
-      text-align: center;
-    }
-  </style>
-  
-  <div class="footer">
-    <p>© Jacob Peacey 2024</p>
-    <a href="Sitemap.html" style="color: white;">Sitemap</a>
-  </div>
 </html>

@@ -1,77 +1,110 @@
 <!DOCTYPE html>
-<title>Thank you</title>
-<style>
-    body {
-        margin: 0;
-        font-family: 'Arial', sans-serif;
-    }
+<html>
+<head>
+    <title>Thank you</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
 
-    .navbar {
-        background-color: #3e3d42;
-        overflow: hidden;
-    }
+        .navbar {
+            background-color: #3e3d42;
+            overflow: hidden;
+        }
 
-    .navbar a {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 16px;
-        text-decoration: none;
-    }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
 
-    .navbar a i {
-        margin-right: 5px;
-    }
+        .navbar a i {
+            margin-right: 5px;
+        }
 
-    .navbar a:hover {
-        background-color: #ffff;
-        color: black;
-    }
+        .navbar a:hover {
+            background-color: #ffff;
+            color: black;
+        }
 
-    .navbar a.ac-color {
-background-color: #3b17bd;
-color: white;
-}
+        .navbar a.ac-color {
+            background-color: #3b17bd;
+            color: white;
+        }
 
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
 
-</style>
-    </head>
-    <body>
-        <div class="navbar">
-            <a href="HomePage.html" class="active">Home</a>
-            <a href="AboutMe.html">About</a>
-            <a href="MyDigitalCV.html">My CV</a>
-            <a href="FormSubmitted.html">Contact</a>
+        .dropdown .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #3e3d42;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ffff;
+            color: black;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #3b17bd;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="HomePage.html" class="active">Home</a>
+        <a href="AboutMe.html">About</a>
+        <a href="MyDigitalCV.html">My CV</a>
+        <a href="FormSubmitted.html">Contact</a>
+        <div class="dropdown">
             <a href="GeneralProjectsLandingPage.html">Projects</a>
-            <a href="Trips.html">Trips and Experiences</a>
-            <div class="dropdown">
+            <div class="dropdown-content">
                 <a href="Qualifications.html">Qualifications</a>
-
-                <div class="dropdown-content">
-
-                    <a href="MyDigitalCV.html">My CV</a>
-                    <a href="Work.html">Employment and Work Experience</a>
-                </div>
-
-            <a href="Hobbies.html">Hobbies</a>
-            <a href="Work.html">Work Experience</a>
+                <a href="Work.html">Employment and Work Experience</a>
+            </div>
         </div>
-    </body>
-<style>
-    .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: #3b17bd;
-        color: white;
-        text-align: center;
-    }
-</style>
-<div class="footer">
-    <p>Footer</p>
-    <a href="Sitemap.html" style="color: white;">Sitemap</a>
-</div>
+        <a href="Trips.html">Trips and Experiences</a>
+        <a href="Hobbies.html">Hobbies</a>
+        <a href="Work.html">Work Experience</a>
+    </div>
 
+    <div class="footer">
+        <p>Footer</p>
+        <a href="Sitemap.html">Sitemap</a>
+    </div>
+</body>
 </html>
