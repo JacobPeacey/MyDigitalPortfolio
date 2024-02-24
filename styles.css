@@ -17,3 +17,11 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+.footer {
+    text-align: left;
+}
+
+.contact-info {
+    margin-left: 0; /* Adjust margin to ensure alignment */
+}
+
