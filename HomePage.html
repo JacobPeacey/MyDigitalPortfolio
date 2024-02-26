@@ -40,13 +40,13 @@
         }
 
         .navbar a.ac-color {
-            background-color: #3b17bd;
+            background-color: #000000;
             color: white;
         }
 
         h1,
         h2 {
-            color: #3b17bd;
+            color: #000000;
             text-align: center;
         }
 
@@ -60,21 +60,42 @@
             margin-bottom: 1.5em;
         }
 
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: #3e3d42;
-            color: #fff;
-             
-             text-align: left;
-}
+        footer {
+            display: flex;
+            justify-content: flex-end;
+        }
 
-.contact-info {
-    margin-left: 0; /* Adjust margin to ensure alignment */
-}
-        
+        .footer-content {
+            display: flex;
+        }
+
+        .socials {
+            margin-right: 20px;
+            /* Adjust margin as needed */
+        }
+
+        .contact-info {
+            margin: 0;
+            /* Adjust margin to ensure alignment */
+        }
+
+        .custom-link {
+            color: red;
+            /* Change to your desired color */
+            /* Additional styling if needed */
+            text-decoration: none;
+            /* This removes the default underline */
+        }
+
+        .custom-link:hover {
+            /* Optional: Style changes when hovering over the link */
+            color: blue;
+            /* Change to your desired hover color */
+        }
+
+        .ImageLayout {
+            < !--Layout-->
+        }
     </style>
 </head>
 
@@ -106,20 +127,48 @@
         <h2>Quick Links</h2>
         <p>Explore specific areas:</p>
         <ul>
-            <li><a href="Level-2-Transition-to-T-Level.html">Course Overview</a></li>
-            <li><a href="Creating-Digital-Graphics.html">Creating Digital Graphics</a></li>
-            <li><a href="Creating-a-digital-portfolio.html">Creating a Digital Portfolio</a></li>
-            <li><a href="Computer-Networks.html">Computer Networks</a></li>
-            <li><a href="The-Online-World.html">The Online World</a></li>
-            <li><a href="Exams-Results-And-Certificates.html">Exam Results and Certificates</a></li>
+            <!--Hyperlinks-->
+            <div>
+                <li><a href="Level-2-Transition-to-T-Level.html">Course Overview</a></li>
+                <li><a href="Creating-Digital-Graphics.html">Creating Digital Graphics</a></li>
+                <li><a href="Creating-a-digital-portfolio.html">Creating a Digital Portfolio</a></li>
+                <li><a href="Computer-Networks.html">Computer Networks</a></li>
+                <li><a href="The-Online-World.html">The Online World</a></li>
+            </div>
+
+
+
+            <!--Images (Moodle Thumbnails)-->
+            <div class="ImageLayout">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+            </div>
+
+
+
         </ul>
     </div>
-
+    <!--General Contact information for footer-->
     <div class="footer">
-        <p>&copy; Jacob Peacey 2024</p>
-                <p> Email: 10693315@student.bpc.ac.uk</p>
-                <p>  Phone Number: +44 (0)7887 616346 </p>
+        <p>Jacob Peacey 2024</p>
+        <p> Email: 10693315@student.bpc.ac.uk</p>
+        <p> Phone Number: +44 (0)7887 616346 </p>
     </div>
+
+    <!--Personal Social Media Links-->
+    <footer>
+        <div class="footer-content">
+            <div class="socials">
+                <h5>Socials</h5>
+                <a href="#" class="custom-link">Your Link Text</a>
+                <br>
+                <a href="#" class="custom-link">Your Link Text</a>
+
+    </footer>
+
 </body>
 
 </html>
