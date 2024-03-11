@@ -5,40 +5,95 @@
             This will be my trips page
         </p>
         <style>
-            * {
-               box-sizing: border-box;
-            }
-            h1 {
-               text-align: center;
-            }
-            .outer-grid {
-               display: flex;
-               flex-wrap: wrap;
-               padding: 0 4px;
-            }
-            .inner-grid {
-               flex: 25%;
-               max-width: 25%;
-               padding: 0 4px;
-            }
-            .inner-grid img {
-               margin-top: 8px;
-               width: 100%;
-               padding: 10px;
-            }
-            @media screen and (max-width: 800px) {
-               .inner-grid {
-                  flex: 50%;
-                  max-width: 50%;
-               }
-            }
-            @media screen and (max-width: 600px) {
-               .inner-grid {
-                  flex: 100%;
-                  max-width: 100%;
-               }
-            }
-         </style>
+         body {
+             margin: 0;
+             font-family: 'Arial', sans-serif;
+             background-color: #f8f8f8;
+             color: #333;
+             line-height: 1.6;
+         }
+ 
+         .navbar {
+             background-color: #3e3d42;
+             overflow: hidden;
+         }
+ 
+         .navbar a {
+             float: left;
+             display: block;
+             color: white;
+             text-align: center;
+             padding: 16px;
+             text-decoration: none;
+         }
+ 
+         .navbar a i {
+             margin-right: 5px;
+         }
+ 
+         .navbar a:hover {
+             background-color: #ffff;
+             color: black;
+         }
+ 
+         .navbar a.ac-color {
+             background-color: #000000;
+             color: white;
+         }
+ 
+         h1,
+         h2 {
+             color: #000000;
+             text-align: center;
+         }
+ 
+         p {
+             margin-bottom: 1.5em;
+         }
+ 
+         ul {
+             list-style-type: disc;
+             margin-left: 20px;
+             margin-bottom: 1.5em;
+         }
+ 
+         footer {
+             display: flex;
+             justify-content: flex-end;
+         }
+ 
+         .footer-content {
+             display: flex;
+         }
+ 
+         .socials {
+             margin-right: 20px;
+             /* Adjust margin as needed */
+         }
+ 
+         .contact-info {
+             margin: 0;
+             /* Adjust margin to ensure alignment */
+         }
+ 
+         .custom-link {
+             color: red;
+             /* Change to your desired color */
+             /* Additional styling if needed */
+             text-decoration: none;
+             /* This removes the default underline */
+         }
+ 
+         .custom-link:hover {
+             /* Optional: Style changes when hovering over the link */
+             color: blue;
+             /* Change to your desired hover color */
+         }
+ 
+         .ImageLayout {
+             /* Layout */
+         }
+     </style>
       <body>
          <h1>Photos from Trips (Placeholder imagery)</h1>
          <div class="outer-grid">

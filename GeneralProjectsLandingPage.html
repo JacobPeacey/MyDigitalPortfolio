@@ -8,23 +8,16 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-        }
-.navbar {
-    color: #3e3d42;
-}
-        .navbar a {
-            float: left;
-            display: block;
-            color: #3e3d42;
-            text-align: center;
-            padding: 16px;
-            text-decoration: none;
-            border-right: 1px solid gray; /* Add border-right */
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
         }
 
-        .navbar a:last-child {
-            border-right: none; /* Remove border-right from the last link */
+        .navbar {
+            background-color: #3e3d42;
+            overflow: hidden;
         }
+
         .navbar a {
             float: left;
             display: block;
@@ -32,6 +25,10 @@
             text-align: center;
             padding: 16px;
             text-decoration: none;
+        }
+
+        .navbar a i {
+            margin-right: 5px;
         }
 
         .navbar a:hover {
@@ -40,44 +37,61 @@
         }
 
         .navbar a.ac-color {
-            background-color: #3b17bd;
+            background-color: #000000;
             color: white;
         }
 
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #3e3d42;
-            min-width: 160px;
-            z-index: 1;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-content a {
-            color: white;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: #3e3d42;
-            color: white;
+        h1,
+        h2 {
+            color: #000000;
             text-align: center;
-            padding: 10px 0;
+        }
+
+        p {
+            margin-bottom: 1.5em;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 1.5em;
+        }
+
+        footer {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .footer-content {
+            display: flex;
+        }
+
+        .socials {
+            margin-right: 20px;
+            /* Adjust margin as needed */
+        }
+
+        .contact-info {
+            margin: 0;
+            /* Adjust margin to ensure alignment */
+        }
+
+        .custom-link {
+            color: red;
+            /* Change to your desired color */
+            /* Additional styling if needed */
+            text-decoration: none;
+            /* This removes the default underline */
+        }
+
+        .custom-link:hover {
+            /* Optional: Style changes when hovering over the link */
+            color: blue;
+            /* Change to your desired hover color */
+        }
+
+        .ImageLayout {
+            /* Layout */
         }
     </style>
 </head>
