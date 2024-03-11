@@ -1,145 +1,148 @@
 <!DOCTYPE html>
-<!--Title the browser listens for-->
-<title>Hobbies</title>
+<html lang="en">
 <head>
-    <!--Declares fontAwessome Library-->
-    <script src="https://kit.fontawesome.com/5a948c2299.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #3e3d42;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            border-right: 1px solid gray; /* Add border-right */
+        }
+
+        .navbar a:last-child {
+            border-right: none; /* Remove border-right from the last link */
+        }
+
+        .navbar a i {
+            margin-right: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #ffff;
+            color: black;
+        }
+
+        .navbar a.ac-color {
+            background-color: #3b17bd;
+            color: white;
+        }
+
+        .footerforGeneral {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #3e3d42;
+            color: white;
+            text-align: center;
+        }
+
+        .footerforSocials {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #3e3d42;
+            color: white;
+            text-align: left;
+        }
+
+        .layoutfortimings {
+            padding: 20px;
+        }
+
+        .imagesfortimings {
+            height: 50px;
+            width: 50px;
+        }
+
+        .rectangleForMyInspirations {
+            width: 400px; /* Set the width of the rectangle */
+            height: 450px; /* Set the height of the rectangle */
+            overflow: hidden; /* Hide overflow content */
+            padding: 10px; /* Add padding for content spacing */
+        }
+
+        .rectangleForMyiOSDevelopmentJourney {
+            width: 400px; /* Set the width of the rectangle */
+            height: 450px; /* Set the height of the rectangle */
+            overflow: hidden; /* Hide overflow content */
+            padding: 10px; /* Add padding for content spacing */
+        }
+    </style>
 </head>
-<style>
-    body {
-        margin: 0;
-        font-family: 'Arial', sans-serif;
-        background-color: #f8f8f8;
-        color: #333;
-        line-height: 1.6;
-    }
-
-    .navbar {
-        background-color: #3e3d42;
-        overflow: hidden;
-    }
-
-    .navbar a {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 16px;
-        text-decoration: none;
-    }
-
-    .navbar a i {
-        margin-right: 5px;
-    }
-
-    .navbar a:hover {
-        background-color: #ffff;
-        color: black;
-    }
-
-    .navbar a.ac-color {
-        background-color: #000000;
-        color: white;
-    }
-
-    h1,
-    h2 {
-        color: #000000;
-        text-align: center;
-    }
-
-    p {
-        margin-bottom: 1.5em;
-    }
-
-    ul {
-        list-style-type: disc;
-        margin-left: 20px;
-        margin-bottom: 1.5em;
-    }
-
-    footer {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .footer-content {
-        display: flex;
-    }
-
-    .socials {
-        margin-right: 20px;
-        /* Adjust margin as needed */
-    }
-
-    .contact-info {
-        margin: 0;
-        /* Adjust margin to ensure alignment */
-    }
-
-    .custom-link {
-        color: red;
-        /* Change to your desired color */
-        /* Additional styling if needed */
-        text-decoration: none;
-        /* This removes the default underline */
-    }
-
-    .custom-link:hover {
-        /* Optional: Style changes when hovering over the link */
-        color: blue;
-        /* Change to your desired hover color */
-    }
-
-    .ImageLayout {
-        /* Layout */
-    }
-</style>
-
-<!--Main body of document-->
-    <body>
-        <div class="navbar">
-            <a href="HomePage.html" class="active">Home</a>
-            <a href="AboutMe.html">About</a>
-            <a href="MyDigitalCV.html">My CV</a>
-            <a href="FormSubmitted.html">Contact</a>
-            <a href="GeneralProjectsLandingPage.html">Projects</a>
-            <a href="Trips.html">Trips and Experiences</a>
-             <a href="Qualifications.html">Qualifications</a>
-             <a href="MyDigitalCV.html">My CV</a>
-            <a href="Work.html">Employment and Work Experience</a>
-        </div>
-    </body>
-<div><h1> My iOS development Journey</h1></div>
-<div class ="rectangleForMyiOSDevelopmentJourney">
-   There was one day i specifically remeber, and it was the day that I opened the swift playgrounds app on my Ipad, and wrote my first line of code... Of course, it was "Hello World!". From there, It Spiraled into more and more. Every day i was learning differenent aspects of SwiftUI. It was in April 2023 i decided that i would put the random lines of code i written and the language that i had essentially self-taught myself over the past yest to good use, and begin writing the code nd desiginng the interface for my first app. Timings, Which is essrntially a to-do list app Which was crafted from a series of toutorials... However, i had to start somewhere
+<body>
+<div class="navbar">
+    <a href="HomePage.html" class="active">Home</a>
+    <a href="AboutMe.html">About</a>
+    <a href="MyDigitalCV.html">My CV</a>
+    <a href="FormSubmitted.html">Contact</a>
+    <a href="GeneralProjectsLandingPage.html">Projects</a>
+    <a href="Trips.html">Trips and Experiences</a>
+    <a href="Qualifications.html">Qualifications</a>
+    <a href="MyDigitalCV.html">My CV</a>
+    <a href="Work.html">Employment and Work Experience</a>
 </div>
 
-<!--What's Timings?-->
-<h3>A little bit more about Timings</h3>
 <div class="layoutfortimings">
-        In its most basic form, Timings was built to be a simplistic to-do app which relies on the prebuilt symbol library avalible to your iphone. Its basic premise is you, the user sets up a new Events, and then sub elements of that event are designated as tasks. As and when those tasks are completed, they are then ticked marked as completed. Once al the set tasks are marked as completed. 
-                iOS will place the events into pre-defined yimebrackets based on what you select as the deadline 
+    Hi, I'm Jacob, an incredibly passionate iOS developer. As of August 2023, I had released my first, albeit simple,
+    app on the App Store. Throughout development, I set out with the idea that I wanted to improve aspects of the
+    user's lifestyle through a simple, yet easy-to-use user interface. Timings focused on clearly setting out your
+    goals, with easily recognizable symbols that we have always had on iPhone.
 </div>
 
-<!-- General Footer Content (txt)-->
+<div class="imagesfortimings">
+    <img src="timingslogo1.png">
+</div>
+
+<div class="rectangleForMyInspirations">
+    <h1>My Inspiration</h1>
+    Who do I look up to, you may ask? The answer you would receive is Steve Jobs. The answer as to why? There's many. If
+    I had to give you one, it would have to be how Steve came from what you could call a disadvantaged background.
+    Despite that, he did what he loved, and sometimes what he didn't (That Calligraphy class in college). Despite the
+    fact he didn't particularly enjoy that course, little did everyone know that Calligraphy skills would later form the
+    screen savers of the Mac's we know and use today.
+    It's not just Steve that I look up to; it's his inventions and his visions too. Specifically, Apple. Some people
+    call me obsessed with Apple's hardware and software, which to be honest, I can't deny. So, knowing that, I thought.
+    How can I put this so-called obsession to good use.
+</div>
+
+<div>
+    <h1>My iOS Development Journey</h1>
+</div>
+<div class="rectangleForMyiOSDevelopmentJourney">
+    In August 2023, i released my first, albeit simple app on the app Store. I set ut with the idea of a simple to do app which i could evolve with my coding skill set
+</div>
+
+<!-- General Footer Content-->
 <div class="footerforGeneral">
-    <p>Footer Content Goes here</p>
+    <p>Footer</p>
     <a href="Sitemap.html" style="color: white;">Sitemap</a>
 </div>
 
-<!--Image Styling within Footer (img)-->
-<div class="footerimages">
-   <!--Place images here-->
-    <!--Linkedin Link(Button)-->
-    <!--Personal X profile Link (Button)-->
+<!--Footer For social Media link-->
+<div class="footerforSocials">
+    <h1>Socials</h1>
+    <!--Needs Underlining-->
+    <a href="https://twitter.com/jacob39151215">Personal X account</a>
+    <!--<a href="https://www.apple.com">whatever social media profile i decide later on</a>-->
 </div>
-</head>
 
-<div><h1>What inspires me? </h1></div>
-<div class="rectangleForMyInspirations">
-    Who do i look up to you may ask? The answer you would recieve, Steve Jobs. The answer as to why? Theres many. If i had to give you one. It would have to be how Steve came from what you could call a disadvantaged background. Despite that, He he did what he loved, and sometimes what he didn't (That Calligraphy class in college). Despite the fact he didnt particulary enjoy that course. Little did eveyone know that  Calligary skills would later form the screen savers of the Mac's we know and use today. 
-    Its not just Steve that i look up to. It's his inventions and his visions too. Specifically, Apple. Some people call me obseesed with Apple's hardware and software, Which to be honest, i cant deny. So, knowing that, i thought. How can i put this so called obsession to good use.
-</div>
 </body>
 </html>
