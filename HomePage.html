@@ -96,6 +96,11 @@
         .ImageLayout {
             /* Layout */
         }
+        
+        .cousethumbnailButton{
+            height: 75;
+            width: 75;
+        }
     </style>
 </head>
 
@@ -127,44 +132,76 @@
         <h2>Quick Links</h2>
         <p>Explore specific areas:</p>
         <ul>
+
+        </ul>
             <!--Course Buttons-->
+<div class="courseThumbnails">
+    <div>
+        <button id="CDGButton">
+            <img src="assets/courseThumbnails/creatingdigitalgraphics.jpg" alt="Button for Creating Digital Graphics">
+        </button>
+    
+        <script>
+            document.getElementById("CDGButton").addEventListener("click", function() {
+                window.location.href = "creatingGraphics.html";
+            });
+        </script>
+  </div>
 
-            <!--Creating Digtal Graphics-->
+    <!--The Online World Button-->
+    <div>
+        <button id="TOWButton">
+            <img src="assets/courseThumbnails/theonlineworld1.jpg" alt="Button for Online World">
+        </button>
+    
+        <script>
+            document.getElementById("TOWButton").addEventListener("click", function() {
+                window.location.href = "theonlineWorld.html";
+            });
+        </script>
+            </div>
+
+                <!--Technology Systems Button -->
+
             <div>
-                <button id="CDGButton">
-                    <img src="/assets/courseThumbnails/creatingdigitalgraphics.jpg" alt="Button for Creating Digital Graphics">
+                <button id="TSButton">
+                    <img src="assets/courseThumbnails/technologysystems.jpg" alt="Button for tech Systems">
                 </button>
             
                 <script>
-                    document.getElementById("CDGButton").addEventListener("click", function() {
-                        window.location.href = "Creating-Digital-Graphics.html";
+                    document.getElementById("TSButton").addEventListener("click", function() {
+                        window.location.href = "technologySystems.html";
                     });
                 </script>
-            </div>
+                    </div>
 
-            <!--The Online World Button-->
-            <div>
-                <button id="TOWButton">
-                    <img src="creatingdigitalgraphics.jpg" alt="Button for Creating Digital Graphics">
-                </button>
-            
-                <script>
-                    document.getElementById("CDGButton").addEventListener("click", function() {
-                        window.location.href = "Creating-Digital-Graphics.html";
-                    });
-                </script>
-            </div>
+                    <!--Computer Networks Button-->
+                    <div>
+                        <button id="CNButton">
+                            <img src="assets/courseThumbnails/computernetworks.jpg" alt="Button for Computer Networks">
+                        </button>
+                        <script>
+                            document.getElementById("CNButton").addEventListener("click", function() {
+                                window.location.href = "computerNetworks.html";
+                            });
+                        </script>
+                            </div>
+
+                            <!--Creating a digital Portfoilo-->
+                            <div>
+                                <button id="DPButton">
+                                    <img src="assets/courseThumbnails/digitalportfolio.jpg" alt="Button for digitalportfolio">
+                                </button>
+                                <script>
+                                    document.getElementById("DPButton").addEventListener("click", function() {
+                                        window.location.href = "digitalPortfolio.html";
+                                    });
+                                </script>
+                                    </div>
+                            
+                    
+
           
-            
-               
-               
-               <img src="technologysystems.jpg">
-               <img src="digitalportfolio.jpg">
-               <img src="computernetworks.png">
-            </div>
-
-            <!--Images (Moodle Thumbnails)-->
-            <!-- to fix -->
            
 
         </ul>
