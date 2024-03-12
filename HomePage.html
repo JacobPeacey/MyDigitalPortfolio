@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacob Peacey - Digital Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha384-VoG9A2lZ1hU2L4uRsRtN9z2ezUX6CbppW1y0Hf0Rooe6V1eg9FjpJlvI9DUEh7L8" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         body {
             margin: 0;
@@ -14,6 +13,9 @@
             background-color: #f8f8f8;
             color: #333;
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Make content stretch to at least full height of viewport */
         }
 
         .navbar {
@@ -60,170 +62,176 @@
             margin-bottom: 1.5em;
         }
 
+        .content {
+            flex: 1; /* Allows content to push footer to bottom */
+        }
+
         footer {
             display: flex;
             justify-content: flex-end;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            margin-top: auto; /* Pushes footer to the bottom of the viewport */
         }
 
         .footer-content {
             display: flex;
+            margin-right: 20px; /* Adjust margin as needed */
+            color: gray;
         }
 
         .socials {
-            margin-right: 20px;
-            /* Adjust margin as needed */
+            margin-right: 20px; /* Adjust margin as needed */
         }
 
         .contact-info {
-            margin: 0;
-            /* Adjust margin to ensure alignment */
+            margin: 0; /* Adjust margin to ensure alignment */
         }
 
         .custom-link {
-            color: red;
-            /* Change to your desired color */
-            /* Additional styling if needed */
-            text-decoration: none;
-            /* This removes the default underline */
+            color: red; /* Change to your desired color */
+            text-decoration: none; /* This removes the default underline */
         }
 
         .custom-link:hover {
-            /* Optional: Style changes when hovering over the link */
-            color: blue;
-            /* Change to your desired hover color */
+            color: blue; /* Change to your desired hover color */
         }
 
-        .ImageLayout {
-            /* Layout */
+        .courseThumbnails {
+            display: flex;
+            justify-content: space-around; /* Adjust layout as needed */
         }
-        
-        .cousethumbnailButton{
-            height: 75;
-            width: 75;
+
+        .courseThumbnails button {
+            border: none;
+            background: none;
+            padding: 0;
+            cursor: pointer;
         }
+
+        .courseThumbnails img {
+            height: 75px;
+            width: 75px;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24;
+        }
+
+.hamburgerMenu {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
     </style>
 </head>
 
 <body>
     <div class="navbar">
         <a href="HomePage.html" class="active">Home</a>
-        <a href="AboutMe.html">About</a>
+        <a href="aboutMe.html">About</a>
         <a href="MyDigitalCV.html">My CV</a>
-        <a href="FormSubmitted.html">Contact</a>
-        <a href="GeneralProjectsLandingPage.html">Projects</a>
+        <a href="projectspage.html">Projects</a>
         <a href="Trips.html">Trips and Experiences</a>
-        <a href="Qualifications.html">Qualifications</a>
+        <a href="qualifications.html">Qualifications</a>
         <a href="MyDigitalCV.html">My CV</a>
         <a href="Work.html">Employment and Work Experience</a>
         <a href="Hobbies.html">Hobbies</a>
+        <!--Menu Button-->
+        <span class="material-symbols-outlined">
+            menu
+            </span>
     </div>
 
-    <h1>Hi, I'm Jacob</h1>
-    <p>Welcome to my Digital Portfolio. I have created this site to showcase both my personal projects and projects
-        undertaken during my education and work experiences.</p>
-    <h2>How to navigate my Portfolio</h2>
-    <p>I have provided multiple navigation methods for ease of access:</p>
-    <ul>
-        <li>Navigation bar with headers</li>
-        <li>Sitemap located in the footer</li>
-        <li>Some pages have dropdown menus, indicated by a down arrow in the top navigation bar</li>
-    </ul>
-    <div>
+    <div class="content">
+        <p>Welcome to my Digital Portfolio. I have created this site to showcase both my personal projects and projects undertaken during my education and work experiences.</p>
         <h2>Quick Links</h2>
         <p>Explore specific areas:</p>
-        <ul>
+        <div class="courseThumbnails">
+            <!-- Course buttons -->
+            <button id="CDGButton">
+                <img src="assets/courseThumbnails/creatingdigitalgraphics.jpg" alt="Button for Creating Digital Graphics">
+            </button>
 
-        </ul>
-            <!--Course Buttons-->
-<div class="courseThumbnails">
-    <div>
-        <button id="CDGButton">
-            <img src="assets/courseThumbnails/creatingdigitalgraphics.jpg" alt="Button for Creating Digital Graphics">
-        </button>
-    
-        <script>
-            document.getElementById("CDGButton").addEventListener("click", function() {
-                window.location.href = "creatingGraphics.html";
-            });
-        </script>
-  </div>
-
-    <!--The Online World Button-->
-    <div>
-        <button id="TOWButton">
-            <img src="assets/courseThumbnails/theonlineworld1.jpg" alt="Button for Online World">
-        </button>
-    
-        <script>
-            document.getElementById("TOWButton").addEventListener("click", function() {
-                window.location.href = "theonlineWorld.html";
-            });
-        </script>
-            </div>
-
-                <!--Technology Systems Button -->
-
-            <div>
-                <button id="TSButton">
-                    <img src="assets/courseThumbnails/technologysystems.jpg" alt="Button for tech Systems">
-                </button>
+            <!-- Other course buttons -->
+            <button id="CNButton">
+                <img src="assets/courseThumbnails/computernetworks.jpg" alt="Button for computer Networks">
+            </button>
             
-                <script>
-                    document.getElementById("TSButton").addEventListener("click", function() {
-                        window.location.href = "technologySystems.html";
-                    });
-                </script>
-                    </div>
+            <button id="TOWButton">
+                <img src="assets/courseThumbnails/theonlineworld1.jpg" alt="Button for the online World">
+            </button>
 
-                    <!--Computer Networks Button-->
-                    <div>
-                        <button id="CNButton">
-                            <img src="assets/courseThumbnails/computernetworks.jpg" alt="Button for Computer Networks">
-                        </button>
-                        <script>
-                            document.getElementById("CNButton").addEventListener("click", function() {
-                                window.location.href = "computerNetworks.html";
-                            });
-                        </script>
-                            </div>
+            <button id="TSButton">
+                <img src="assets/courseThumbnails/technologysystems.jpg" alt="Button for Technology Systems">
+            </button>
 
-                            <!--Creating a digital Portfoilo-->
-                            <div>
-                                <button id="DPButton">
-                                    <img src="assets/courseThumbnails/digitalportfolio.jpg" alt="Button for digitalportfolio">
-                                </button>
-                                <script>
-                                    document.getElementById("DPButton").addEventListener("click", function() {
-                                        window.location.href = "digitalPortfolio.html";
-                                    });
-                                </script>
-                                    </div>
-                            
-                    
-
-          
-           
-
-        </ul>
-    </div>
-    <!--General Contact information for footer-->
-    <footer>
-        <p>Jacob Peacey 2024</p>
-        <p>Email: 10693315@student.bpc.ac.uk</p>
-        <p>Phone Number: +44 (0)7887 616346</p>
-        <P>the changes to this part of the footer were made remotely</P>
-    </footer>
-
-    <!--Personal Social Media Links-->
-    <div class="footer-content">
-        <div class="socials">
-            <h5>Socials</h5>
-            <a href="#" class="custom-link">Your Link Text</a>
-            <br>
-            <a href="#" class="custom-link">Your Link Text</a>
+            <!-- Envelope button -->
+            
         </div>
     </div>
 
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- Place your footer content here -->
+            <button id="MailButton">
+                <span class="material-symbols-outlined">mail</span>
+            </button>
+
+        </div>
+    </footer>
+
+    <!-- Personal Social Media Links -->
+    <div class="footer-content socials">
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById("MailButton").addEventListener("click", function() {
+        // Specify the email address
+        var emailAddress = "jacobpeacey2007@icloud.com";
+
+        // Generate a dynamic string of numbers (for example)
+        var randomNumber = Math.floor(Math.random() * 10000); // Generates a random number between 0 and 9999
+
+        // Specify the subject including the dynamic string of numbers
+        var subject = "Contact Request - " + randomNumber;
+
+        // Create the mailto URL with the email address and subject
+        var mailtoURL = "mailto:" + encodeURIComponent(emailAddress) + "?subject=" + encodeURIComponent(subject);
+
+        // Open default email client with specified email address and subject
+        window.location.href = mailtoURL;
+    });
+       
+        document.getElementById("CDGButton").addEventListener("click", function() {
+            // Open default email client with specified email address
+            window.location.href = "creatingGraphics.html";
+        });
+
+        document.getElementById("CNButton").addEventListener("click", function() {
+            // Open default email client with specified email address
+            window.location.href = "computerNetworks.html";
+        });
+
+        document.getElementById("TSButton").addEventListener("click", function() {
+            // Open default email client with specified email address
+            window.location.href = "technologySystems.html";
+        });
+        document.getElementById("TOWButton").addEventListener("click", function() {
+            // Open default email client with specified email address
+            window.location.href = "theonlineworld.html";
+        });
+       
+    </script>
 </body>
 
 </html>
