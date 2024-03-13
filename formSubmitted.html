@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         body {
             margin: 0;
@@ -65,37 +69,98 @@
 
         .socials {
             margin-right: 20px;
-            /* Adjust margin as needed */
         }
 
         .contact-info {
             margin: 0;
-            /* Adjust margin to ensure alignment */
         }
 
         .custom-link {
             color: red;
-            /* Change to your desired color */
-            /* Additional styling if needed */
             text-decoration: none;
-            /* This removes the default underline */
         }
 
         .custom-link:hover {
-            /* Optional: Style changes when hovering over the link */
             color: blue;
-            /* Change to your desired hover color */
         }
 
         .ImageLayout {
             /* Layout */
         }
-    </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <style>
-        /* Your CSS styles */
+
+        /* New styles for the form */
+        #myForm {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #myForm div {
+            margin-bottom: 20px;
+        }
+
+        #myForm label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        #myForm input[type="text"],
+        #myForm textarea,
+        #myForm select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #myForm input[type="submit"] {
+            background-color: #3e3d42;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #myForm input[type="submit"]:hover {
+            background-color: #000;
+        }
+
+        .formcancelbutton {
+            height: 100px;
+            width: 100px;
+            background-color: #000;
+        }
+
+        /* The alert message box */
+        .alert {
+            padding: 20px;
+            background-color: #f44336; /* Red */
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        /* The close button */
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* When moving the mouse over the close button */
+        .closebtn:hover {
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -103,39 +168,49 @@
         <!-- Your navigation links -->
     </div>
 
-    <form id="myForm" method="POST" action="send_email.php">
+    <form id="myForm" method="POST" action="mailto:your@email.com" enctype="text/plain">
         <div>
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="name" placeholder="First Name">
+            <input type="text" id="fname" name="name" placeholder="Enter your first name" required>
         </div>
         <div>
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="surname" placeholder="Surname">
+            <input type="text" id="lname" name="surname" placeholder="Enter your last name" required>
         </div>
         <div>
             <label for="country">Country</label>
             <select id="country" name="country">
-                <!-- Your select options -->
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <option value="Australia">Australia</option>
+                <option value="Other">Other</option>
             </select>
         </div>
         <div>
             <label for="Message">Message</label>
-            <textarea id="Message" name="message" placeholder="What's Up?.." style="height: 200px"></textarea>
+            <textarea id="Message" name="message" placeholder="Enter your message" style="height: 200px" required></textarea>
         </div>
-        <input type="submit" value="Submit">
+        <input type="submit" id="submitButton" value="Submit">
+        <div class="formcancelbutton">
+            <span class="material-symbols-outlined">
+                close
+            </span>
+        </div>
     </form>
 
     <div class="footer">
-        <!-- Your footer content -->
+        <!-- Footer content -->
     </div>
 
     <script>
-        document.getElementById('myForm').addEventListener('submit', function (event) {
-            // Prevent the default form submission
-            event.preventDefault();
-
-            // Redirect to the thank you page
-            window.location.href = 'ThankyouFS.html';
+        document.getElementById("submitButton").addEventListener("click", function() {
+            // Open default email client with specified email address
+            var subject = "Contact Form Submission";
+            var body = "Name: " + document.getElementById("fname").value + " " + document.getElementById("lname").value + "\n";
+            body += "Country: " + document.getElementById("country").value + "\n";
+            body += "Message: " + document.getElementById("Message").value;
+            window.location.href = "mailto:Jacobpeacey2007@icloud.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
         });
     </script>
 </body>
