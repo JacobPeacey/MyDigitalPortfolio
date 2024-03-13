@@ -13,9 +13,6 @@
             background-color: #f8f8f8;
             color: #333;
             line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Make content stretch to at least full height of viewport */
         }
 
         .navbar {
@@ -62,75 +59,106 @@
             margin-bottom: 1.5em;
         }
 
-        .content {
-            flex: 1; /* Allows content to push footer to bottom */
-        }
-
         footer {
             display: flex;
             justify-content: flex-end;
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            margin-top: auto; /* Pushes footer to the bottom of the viewport */
         }
 
         .footer-content {
             display: flex;
-            margin-right: 20px; /* Adjust margin as needed */
-            color: gray;
         }
 
         .socials {
-            margin-right: 20px; /* Adjust margin as needed */
+            margin-right: 20px;
         }
 
         .contact-info {
-            margin: 0; /* Adjust margin to ensure alignment */
+            margin: 0;
         }
 
         .custom-link {
-            color: red; /* Change to your desired color */
-            text-decoration: none; /* This removes the default underline */
+            color: red;
+            text-decoration: none;
         }
 
         .custom-link:hover {
-            color: blue; /* Change to your desired hover color */
+            color: blue;
         }
 
-        .courseThumbnails {
-            display: flex;
-            justify-content: space-around; /* Adjust layout as needed */
+        .ImageLayout {
+            /* Layout */
         }
 
-        .courseThumbnails button {
+        /* New styles for the form */
+        #myForm {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #myForm div {
+            margin-bottom: 20px;
+        }
+
+        #myForm label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        #myForm input[type="text"],
+        #myForm textarea,
+        #myForm select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #myForm input[type="submit"],
+        #myForm button {
+            background-color: #3e3d42;
+            color: white;
             border: none;
-            background: none;
-            padding: 0;
+            padding: 12px 20px;
+            border-radius: 5px;
             cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px; /* Added margin to separate the buttons */
         }
 
-        .courseThumbnails img {
-            height: 75px;
-            width: 75px;
+        #myForm input[type="submit"]:hover,
+        #myForm button:hover {
+            background-color: #000;
         }
 
-        .material-symbols-outlined {
-            font-variation-settings:
-            'FILL' 0,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 24;
+        /* The alert message box */
+        .alert {
+            padding: 20px;
+            background-color: #f44336; /* Red */
+            color: white;
+            margin-bottom: 15px;
         }
-        
 
-.hamburgerMenu {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
+        /* The close button */
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* When moving the mouse over the close button */
+        .closebtn:hover {
+            color: black;
+        }
     </style>
 </head>
 
@@ -196,19 +224,7 @@
     <script>
         document.getElementById("MailButton").addEventListener("click", function() {
         // Specify the email address
-        var emailAddress = "jacobpeacey2007@icloud.com";
-
-        // Generate a dynamic string of numbers (for example)
-        var randomNumber = Math.floor(Math.random() * 10000); // Generates a random number between 0 and 9999
-
-        // Specify the subject including the dynamic string of numbers
-        var subject = "Contact Request - " + randomNumber;
-
-        // Create the mailto URL with the email address and subject
-        var mailtoURL = "mailto:" + encodeURIComponent(emailAddress) + "?subject=" + encodeURIComponent(subject);
-
-        // Open default email client with specified email address and subject
-        window.location.href = mailtoURL;
+        window.location.href = "formSubmitted.html";
     });
        
         document.getElementById("CDGButton").addEventListener("click", function() {

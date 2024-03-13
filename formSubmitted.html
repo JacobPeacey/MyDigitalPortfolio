@@ -117,7 +117,8 @@
             border-radius: 5px;
         }
 
-        #myForm input[type="submit"] {
+        #myForm input[type="submit"],
+        #myForm button {
             background-color: #3e3d42;
             color: white;
             border: none;
@@ -125,15 +126,11 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            margin-right: 10px; /* Added margin to separate the buttons */
         }
 
-        #myForm input[type="submit"]:hover {
-            background-color: #000;
-        }
-
-        .formcancelbutton {
-            height: 100px;
-            width: 100px;
+        #myForm input[type="submit"]:hover,
+        #myForm button:hover {
             background-color: #000;
         }
 
@@ -192,25 +189,29 @@
             <textarea id="Message" name="message" placeholder="Enter your message" style="height: 200px" required></textarea>
         </div>
         <input type="submit" id="submitButton" value="Submit">
-        <div class="formcancelbutton">
-            <span class="material-symbols-outlined">
-                close
-            </span>
-        </div>
+        <!-- Add cancel button -->
+        <button type="button" id="cancelButton">Cancel</button>
     </form>
 
     <div class="footer">
-        <!-- Footer content -->
+    
     </div>
 
     <script>
         document.getElementById("submitButton").addEventListener("click", function() {
-            // Open default email client with specified email address
             var subject = "Contact Form Submission";
             var body = "Name: " + document.getElementById("fname").value + " " + document.getElementById("lname").value + "\n";
             body += "Country: " + document.getElementById("country").value + "\n";
             body += "Message: " + document.getElementById("Message").value;
             window.location.href = "mailto:Jacobpeacey2007@icloud.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        });
+
+        // Add functionality to cancel button
+        document.getElementById("cancelButton").addEventListener("click", function() {
+            // Alert the user about cancellation
+            alert("You have cancelled this contact request. Please use the button in the footer in the pages if you would like to send another form.");
+            // Redirect to another page
+            window.location.href = "HomePage.html";
         });
     </script>
 </body>
