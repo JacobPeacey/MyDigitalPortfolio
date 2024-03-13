@@ -88,7 +88,16 @@
     }
 
     .ImageLayout {
-        /* Layout */
+    height: auto;
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #3e3d42;
+        color: white;
+        text-align: center;
     }
 </style>
     </head>
@@ -106,28 +115,38 @@
         </div>
     </body>
 
-    <body>
-    <p>
-        
+    <p> Hi there,
+        <br>
+            Perhaps i should tell you about myself. Since thats what portfolios are for...
     </p>
-    </body>
-<style>
-    .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: #3e3d42;
-        color: white;
-        text-align: center;
-    }
-</style>
-<div class="footer">
-    <p>Footer</p>
-    <a href="Sitemap.html" style="color: white;">Sitemap</a>
-    <button id="MailButton">
-        <span class="material-symbols-outlined">mail</span>
-    </button>
-</div>
+    <br>
+    <P>Im Jacob, a 17 year old UK digital and creative student... 
+        Perhaps less of the creative part! Definitly digital though! If i could only tell you one thing about myelf, it would have to be the fact that that i absoltely love Software development.
+             More App development than Web development though.</P>
+    <h4>What am i Most proud of?</h4>
+        <br>
+            <p>I am most proud of the fact that i was able to self teach myslef the language that the worlds most popular mobile devices operate using. Most of the Apps you use on your iPhone, iPad, Apple Watch, Mac and Apple Vision Pro are built off of SwiftUI.
+                    With the newfound skills i decided to build  functioing albeit simple App for iPhone. My app is actually avalible on the App Store.
+            </p>
+                    <br>
+    <h4>Whats this so called App?</h4>
+    <br>
+    <p>If youd like to find out more about some of my Projects. Visit the dedicated Projects page, within this page, you can view more information such as screenshots, and if you wish Download Links.
+    </p>
 
-</html>
+
+    <div class="footer">
+        <a href="Sitemap.html" style="color: white;">Sitemap</a>
+        <button id="MailButton">
+            <span class="material-symbols-outlined">mail</span>
+        </button>
+    </div>
+    
+    <script>
+        document.getElementById("MailButton").addEventListener("click", function() {
+            // Specify the email address
+            window.location.href = "formSubmitted.html";
+        });
+    </script>
+    </html>
+    
