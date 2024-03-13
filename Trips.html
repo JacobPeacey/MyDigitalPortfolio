@@ -158,25 +158,92 @@
             .closebtn:hover {
                 color: black;
             }
+            .grid1 {
+                height: 100px;
+                width: 100px;
+            }
+            .grid2 {
+
+            }
         </style>
       <body>
-         <h1>Photos from Trips (Placeholder imagery)</h1>
-         <div class="outer-grid">
-            <div class="inner-grid">
-               <img src="https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
-               <img src="https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
-               <img src="https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"   />
-            </div>
-            <div class="inner-grid">
-               <img src="https://images.pexels.com/photos/3805102/pexels-photo-3805102.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"   />
-               <img src="https://images.pexels.com/photos/3805102/pexels-photo-3805102.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"   />
-               <img src="https://images.pexels.com/photos/3805102/pexels-photo-3805102.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-            </div>
-            <div class="inner-grid">
-               <img src="https://images.pexels.com/photos/3863778/pexels-photo-3863778.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-               <img src="https://images.pexels.com/photos/3863778/pexels-photo-3863778.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"   />
-               <img src="https://images.pexels.com/photos/3863778/pexels-photo-3863778.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"   />
-            </div>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos from Trips</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+        p {
+            text-align: center;
+            color: #666;
+        }
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 30px auto;
+            max-width: 1200px;
+        }
+        .grid-item {
+            margin: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .grid-item img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s ease-in-out;
+        }
+        .grid-item:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<h2>Photos from Trips</h2>
+<p>I have been to some pretty stunning places on my travels and have decided to share some photos.</p>
+
+<div class="grid-container">
+    <div class="grid-item">
+        <img src="assets/trips/AtlanticCarribbeanAUG22.jpg" alt="Trip Photo 1">
+    </div>
+    <div class="grid-item">
+        <img src="https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Trip Photo 2">
+    </div>
+    <div class="grid-item">
+        <img src="https://images.pexels.com/photos/3805102/pexels-photo-3805102.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Trip Photo 3">
+    </div>
+    <div class="grid-item">
+        <img src="https://images.pexels.com/photos/3863778/pexels-photo-3863778.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Trip Photo 4">
+    </div>
+    <div class="grid-item">
+        <img src="https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Trip Photo 5">
+    </div>
+    <div class="grid-item">
+        <img src="https://images.pexels.com/photos/3805102/pexels-photo-3805102.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Trip Photo 6">
+    </div>
+    <div class="grid-item">
+        <img src="https://images.pexels.com/photos/3863778/pexels-photo-3863778.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Trip Photo 7">
+    </div>
+</div>
+
+</body>
+</html>
+
          </div>
       </body>
     </body>

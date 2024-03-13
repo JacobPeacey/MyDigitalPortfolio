@@ -15,19 +15,22 @@
             line-height: 1.6;
         }
 
-        .navbar {
-            background-color: #3e3d42;
-            overflow: hidden;
-        }
-
         .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 16px;
-            text-decoration: none;
-        }
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+}
+
+.navbar a.active {
+    font-weight: bold;
+}
+
 
         .navbar a i {
             margin-right: 5px;
@@ -160,6 +163,23 @@
         .closebtn:hover {
             color: black;
         }
+        .thumbnail-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.thumbnail-button img {
+    width: 100%;
+    display: block;
+}
+
+.thumbnail-button:hover {
+    transform: scale(1.1);
+}
+
     </style>
 </head>
 
@@ -174,11 +194,8 @@
         <a href="MyDigitalCV.html">My CV</a>
         <a href="Work.html">Employment and Work Experience</a>
         <a href="Hobbies.html">Hobbies</a>
-        <!--Menu Button-->
-        <span class="material-symbols-outlined">
-            menu
-            </span>
     </div>
+    
 
     <div class="content">
         <p>Welcome to my Digital Portfolio. I have created this site to showcase both my personal projects and projects undertaken during my education and work experiences.</p>
@@ -186,28 +203,28 @@
         <div>
             <p>I have created the quick link buttons to allow you to quikly access the units in my College Course. Alternativly, you can use the navigation bar above to navigate to the corresponing pages.</p>
 
-        </div>
-        <div class="courseThumbnails">
-            <!-- Course buttons -->
-            <button id="CDGButton">
-                <img src="assets/courseThumbnails/creatingdigitalgraphics.jpg" alt="Button for Creating Digital Graphics">
-            </button>
-
-            <!-- Other course buttons -->
-            <button id="CNButton">
-                <img src="assets/courseThumbnails/computernetworks.jpg" alt="Button for computer Networks">
-            </button>
+            <div class="courseThumbnails">
+                <!-- Course buttons -->
+                <button id="CDGButton" class="thumbnail-button">
+                    <img src="assets/courseThumbnails/creatingdigitalgraphics.jpg" alt="Button for Creating Digital Graphics">
+                </button>
             
-            <button id="TOWButton">
-                <img src="assets/courseThumbnails/theonlineworld1.jpg" alt="Button for the online World">
-            </button>
-
-            <button id="TSButton">
-                <img src="assets/courseThumbnails/technologysystems.jpg" alt="Button for Technology Systems">
-            </button>
-
-            <!-- Envelope button -->
-        </div>
+                <!-- Other course buttons -->
+                <button id="CNButton" class="thumbnail-button">
+                    <img src="assets/courseThumbnails/computernetworks.jpg" alt="Button for computer Networks">
+                </button>
+                
+                <button id="TOWButton" class="thumbnail-button">
+                    <img src="assets/courseThumbnails/theonlineworld1.jpg" alt="Button for the online World">
+                </button>
+            
+                <button id="TSButton" class="thumbnail-button">
+                    <img src="assets/courseThumbnails/technologysystems.jpg" alt="Button for Technology Systems">
+                </button>
+            
+                <!-- Envelope button -->
+            </div>
+            
     </div>
 
     <!-- Footer -->

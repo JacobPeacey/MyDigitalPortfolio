@@ -10,24 +10,22 @@
             font-family: 'Arial', sans-serif;
         }
 
-        .navbar {
-            background-color: #3e3d42;
-            overflow: hidden;
-        }
-
         .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 16px;
-            text-decoration: none;
-            border-right: 1px solid gray; /* Add border-right */
-        }
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+}
 
-        .navbar a:last-child {
-            border-right: none; /* Remove border-right from the last link */
-        }
+.navbar a:hover {
+    transform: scale(1.1);
+}
+
+.navbar a.active {
+    font-weight: bold;
+}
+
 
         .navbar a i {
             margin-right: 5px;
@@ -39,7 +37,7 @@
         }
 
         .navbar a.ac-color {
-            background-color: #3b17bd;
+            background-color: #000000;
             color: white;
         }
 
@@ -86,6 +84,6 @@
             padding: 10px; /* Add padding for content spacing */
         }
     </style>
-    
+
 </body>
 </html>
