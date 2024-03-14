@@ -87,10 +87,7 @@
             color: blue;
         }
 
-        .ImageLayout {
-            /* Layout */
-        }
-
+       
         /* New styles for the form */
         #myForm {
             max-width: 600px;
@@ -147,7 +144,7 @@
 
         /* The close button */
         .closebtn {
-            margin-left: 15px;
+            margin-left: 10px;
             color: white;
             font-weight: bold;
             float: right;
@@ -161,6 +158,29 @@
         .closebtn:hover {
             color: black;
         }
+        .maintext {
+            height: 100;
+            width: 175;
+        }
+        .customButton { 
+
+border-radius:10px;
+padding:10px;
+ margin:10px;
+background-color:#000000;
+color:#FFFFFF;
+font-weight:bold;
+opacity:1;
+transition:1s;
+} 
+.customButton:hover {
+cursor:pointer;
+background-color:#000000;
+opacity:0.5;
+transition:1s;
+color:#FFDED4;
+} 
+
     </style>
 </head>
 <body>
@@ -173,8 +193,22 @@
         <a href="Hobbies.html">Hobbies</a>
         <a href="Work.html">Work Experience</a>
     </div>
+<br> <!--adds spacing directly after the navigation bar-->
+   <div class="maintext">
+    During my spare time, both within and beyond college, I have dedicated significant hours to cultivating my portfolio, encompassing projects relevant to my overall college course and its units, as well as personal endeavours such as my Live App Store Project Timings. This entails a diverse range of undertakings, including projects within course units such as the Gaurdians of the galaxy poster remake in Creating Digital Graphics, or structured assignments like the First Music Computer Networks design task.
+   </div>
+   <!--Adds a break-->
+   <br>
 
-   
+    <!--Personal projects Button-->
+   <div class="html_button btn-left">
+    <a href="personalProjects.html" class="btn customButton large">Personal Projects</a>
+</div>
+    <br>
+        <!--College Projects Button-->
+<div class="html_button btn-left">
+    <a href="collegeProjects.html" class="btn customButton large">College Projects</a>
+</div>
 
     <div class="footer">
         <p>© Jacob Peacey 2024</p>
