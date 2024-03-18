@@ -179,6 +179,10 @@
 .thumbnail-button:hover {
     transform: scale(1.1);
 }
+    .projectsButton {
+        height: 100px;
+        width: 200px;
+    }
 
     </style>
 </head>
@@ -222,8 +226,15 @@
             
                 <!-- Envelope button -->
             </div>
+
+            <!--Button for project linking-->
+          
+            <button id="pPD2" class="projectsButton">
+                <img src="assets/logos/personalProjectD2.jpg" alt="button for personal projects logo">
+            </button>
+        
             
-    </div>
+        
 
     <!-- Footer -->
     <footer>
@@ -242,6 +253,12 @@
 
     <!-- JavaScript -->
     <script>
+
+        document.getElementById("pPD2").addEventListener("click", function() {
+            window.location.href = "personalProjects.html"
+            print("click registered")
+        });
+
         document.getElementById("MailButton").addEventListener("click", function() {
         // Specify the email address
         window.location.href = "formSubmitted.html";
