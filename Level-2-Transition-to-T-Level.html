@@ -174,19 +174,21 @@
         </div>
         <div class="courseThumbnails">
             <!-- Course buttons -->
+            <P>This link will allow you to go directly to my creating digital graphics unit.</P>
             <button id="CDGButton" class="thumbnail-button">
                 <img src="assets/courseThumbnails/creatingdigitalgraphics.jpg" alt="Button for Creating Digital Graphics">
             </button>
         
             <!-- Other course buttons -->
+            <P> This button will allow you to access my Computer networks unit.</P>
             <button id="CNButton" class="thumbnail-button">
                 <img src="assets/courseThumbnails/computernetworks.jpg" alt="Button for computer Networks">
             </button>
-            
+            <P>This button will take you to my The Online world Unit.</P>
             <button id="TOWButton" class="thumbnail-button">
                 <img src="assets/courseThumbnails/theonlineworld1.jpg" alt="Button for the online World">
             </button>
-        
+        <P>This button will take you directly to my Technology Systems Unit</P>
             <button id="TSButton" class="thumbnail-button">
                 <img src="assets/courseThumbnails/technologysystems.jpg" alt="Button for Technology Systems">
             </button>
@@ -197,13 +199,33 @@
 <html>
     <!--Javascript for course buttons.-->
     <script>
+        
             document.getElementById("CDGButton").addEventListener("click"), function() {
                 window.location.href = "creatingGraphics.html"
             }
+            document.getElementById("CNButton").addEventListener("click", function() {
+            // Open default email client with specified email address
+            window.location.href = "computerNetworks.html";
+        });
+
+        document.getElementById("TSButton").addEventListener("click", function() {
+            // Open default email client with specified email address
+            window.location.href = "technologySystems.html";
+        });
+        document.getElementById("TOWButton").addEventListener("click", function() {
+            // Open default email client with specified email address
+            window.location.href = "theonlineworld.html";
+        });
+
+
     </script>
 
 <div class="coursehighlights">
     <h3>Level 2 - Tlevel Foundation</h3>
+        <h4>The highlights of my year in T-Level</h4>
+        <div>
+            <p> If i was ever asked for highlights of my year related to my course, it wojuld have to be the fact that i truly realised my HTML knowledge. Funnily enough, it was through this project.</p>
+        </div>
 
 </div>
 </html>
