@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://kit.fontawesome.com/1835d3dc9f.js" crossorigin="anonymous"></script> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacob Peacey - Digital Portfolio</title>
@@ -183,6 +184,10 @@
         height: 100px;
         width: 200px;
     }
+    .socialsButton {
+        height: 50px;
+        width: 50px;
+    }
 
     </style>
 </head>
@@ -223,12 +228,14 @@
                 <button id="TSButton" class="thumbnail-button">
                     <img src="assets/courseThumbnails/technologysystems.jpg" alt="Button for Technology Systems">
                 </button>
-            
-                <!-- Envelope button -->
             </div>
 
-            <!--Button for project linking-->
-          
+            <!--Button for college projects-->
+            <button id="cPd2" class="projectsButton">
+                <img src="assets/logos/collegeProjects.jpg" alt="">
+            </button>
+
+            <!--Button for college projects-->
             <button id="pPD2" class="projectsButton">
                 <img src="assets/logos/personalProjectD2.jpg" alt="button for personal projects logo">
             </button>
@@ -249,18 +256,28 @@
 
     <!-- Personal Social Media Links -->
     <div class="footer-content socials">
+        <button id="twitterLogo" class="socialsButton">
+            <i class="fa-brands fa-x-twitter"></i>
+        </button>
     </div>
 
     <!-- JavaScript -->
     <script>
 
+        document.getElementById("cPd2").addEventListener("click", function(){
+                window.location.href = "collegeProjects.html"
+        })
+            //Links out to personal twitter account
+        document.getElementById("twitterLogo").addEventListener("click", function(){
+            window.location.href = "https://twitter.com/jacob39151215"
+        })
+            //Directs to personal Projects page
         document.getElementById("pPD2").addEventListener("click", function() {
             window.location.href = "personalProjects.html"
             print("click registered")
         });
-
+                //Directs to the contact form
         document.getElementById("MailButton").addEventListener("click", function() {
-        // Specify the email address
         window.location.href = "formSubmitted.html";
     });
        
