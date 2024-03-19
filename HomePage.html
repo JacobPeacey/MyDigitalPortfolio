@@ -17,21 +17,20 @@
         }
 
         .navbar a {
-    display: inline-block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-    transition: transform 0.3s ease-in-out;
-}
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s ease-in-out;
+        }
 
-.navbar a:hover {
-    transform: scale(1.1);
-}
+        .navbar a:hover {
+            transform: scale(1.1);
+        }
 
-.navbar a.active {
-    font-weight: bold;
-}
-
+        .navbar a.active {
+            font-weight: bold;
+        }
 
         .navbar a i {
             margin-right: 5px;
@@ -165,30 +164,75 @@
             color: black;
         }
         .thumbnail-button {
-    border: none;
-    background: none;
-    padding: 0;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-}
+            border: none;
+            background: none;
+            padding: 0;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
 
-.thumbnail-button img {
-    width: 100%;
-    display: block;
-}
+        .thumbnail-button img {
+            width: 100%;
+            display: block;
+        }
 
-.thumbnail-button:hover {
-    transform: scale(1.1);
-}
-    .projectsButton {
-        height: 100px;
-        width: 200px;
-    }
-    .socialsButton {
-        height: 50px;
-        width: 50px;
-    }
+        .thumbnail-button:hover {
+            transform: scale(1.1);
+        }
+        .projectsButton {
+            height: 100px;
+            width: 200px;
+        }
+        .socialsButton {
+            height: 50px;
+            width: 50px;
+        }
 
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 10px; /* Added margin for spacing */
+        }
+
+        .dropdown-button {
+            background-color: transparent;
+            color: #333;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .dropdown-button:hover {
+            color: #000; /* Change color on hover */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 1;
+            margin-top: 5px;
+        }
+
+        .dropdown-option {
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .dropdown-option:hover {
+            background-color: #f2f2f2;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
     </style>
 </head>
 
@@ -197,18 +241,30 @@
         <a href="HomePage.html" class="active">Home</a>
         <a href="aboutMe.html">About</a>
         <a href="MyDigitalCV.html">My CV</a>
-        <a href="projectspage.html">Projects</a>
         <a href="Trips.html">Trips and Experiences</a>
         <a href="qualifications.html">Qualifications</a>
         <a href="MyDigitalCV.html">My CV</a>
         <a href="Work.html">Employment and Work Experience</a>
         <a href="Hobbies.html">Hobbies</a>
+
+        
+        
+        <!-- Dropdown in Navbar -->
+        <div class="dropdown">
+            <button class="dropdown-button">Projects</button>
+            <div class="dropdown-content">
+                <a href="collegeProjects.html" class="dropdown-option">College Projects</a>
+                <a href="personalProjects.html" class="dropdown-option">Personal Projects</a>
+      
+            </div>
+        </div>
     </div>
+
     <div class="content">
         <p>Welcome to my Digital Portfolio. I have created this site to showcase both my personal projects and projects undertaken during my education and work experiences.</p>
 
         <div>
-            <p>I have created the quick link buttons to allow you to quickly access the units in my College Course. Alternativly, you can use the navigation bar above to navigate to the corresponing pages.</p>
+            <p>I have created the quick link buttons to allow you to quickly access the units in my College Course. Alternatively, you can use the navigation bar above to navigate to the corresponding pages.</p>
 
             <div class="courseThumbnails">
                 <!-- Course buttons -->
@@ -239,9 +295,8 @@
             <button id="pPD2" class="projectsButton">
                 <img src="assets/logos/personalProjectD2.jpg" alt="button for personal projects logo">
             </button>
-        
-            
-        
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
