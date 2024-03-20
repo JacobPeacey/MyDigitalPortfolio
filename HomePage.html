@@ -306,6 +306,13 @@
                 <span class="material-symbols-outlined">mail</span>
             </button>
 
+
+            <!--Button for feedback survey-->
+            <button id="feebackSurvey">
+                <!--Font Awesome logo-->
+                <i class="fa-thin fa-square-poll-vertical"></i>
+            </button>
+
         </div>
     </footer>
 
@@ -330,6 +337,12 @@
 
     <!-- JavaScript -->
     <script>
+
+        document.getElementById("feedbackSurvey").addEventListener("click", function() {
+                    /*Link out to leave Portfolio Feedback as requested in the brief*/
+            window.location.href = "https://forms.office.com/e/EhpsGySHkj"
+        })
+
         document.getElementById("cPd2").addEventListener("click", function(){
                 window.location.href = "collegeProjects.html"
         })
