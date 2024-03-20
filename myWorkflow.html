@@ -2,3 +2,231 @@
 <title>
     My development Workflow
 </title>
+<!--Page styling-->
+<style>
+    body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .navbar a {
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            transform: scale(1.1);
+        }
+
+        .navbar a.active {
+            font-weight: bold;
+        }
+
+        .navbar a i {
+            margin-right: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #ffff;
+            color: black;
+        }
+
+        .navbar a.ac-color {
+            background-color: #000000;
+            color: white;
+        }
+
+        h1,
+        h2 {
+            color: #000000;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 1.5em;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 1.5em;
+        }
+
+        footer {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .footer-content {
+            display: flex;
+        }
+
+        .socials {
+            margin-right: 20px;
+        }
+
+        .contact-info {
+            margin: 0;
+        }
+
+        .custom-link {
+            color: red;
+            text-decoration: none;
+        }
+
+        .custom-link:hover {
+            color: blue;
+        }
+
+        .ImageLayout {
+            /* Layout */
+            height: auto;
+        }
+
+        /* New styles for the form */
+        #myForm {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #myForm div {
+            margin-bottom: 20px;
+        }
+
+        #myForm label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        #myForm input[type="text"],
+        #myForm textarea,
+        #myForm select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #myForm input[type="submit"],
+        #myForm button {
+            background-color: #3e3d42;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px; /* Added margin to separate the buttons */
+        }
+
+        #myForm input[type="submit"]:hover,
+        #myForm button:hover {
+            background-color: #000;
+        }
+
+        /* The alert message box */
+        .alert {
+            padding: 20px;
+            background-color: #f44336; /* Red */
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        /* The close button */
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* When moving the mouse over the close button */
+        .closebtn:hover {
+            color: black;
+        }
+        .thumbnail-button {
+            border: none;
+            background: none;
+            padding: 0;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .thumbnail-button img {
+            width: 100%;
+            display: block;
+        }
+
+        .thumbnail-button:hover {
+            transform: scale(1.1);
+        }
+        .projectsButton {
+            height: 100px;
+            width: 200px;
+        }
+        .socialsButton {
+            height: 50px;
+            width: 50px;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 10px; /* Added margin for spacing */
+        }
+
+        .dropdown-button {
+            background-color: transparent;
+            color: #333;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .dropdown-button:hover {
+            color: #000; /* Change color on hover */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 1;
+            margin-top: 5px;
+        }
+
+        .dropdown-option {
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .dropdown-option:hover {
+            background-color: #f2f2f2;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+</style>
