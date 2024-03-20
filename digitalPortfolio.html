@@ -72,6 +72,24 @@
             margin-right: 20px;
             /* Adjust margin as needed */
         }
+        .socialsButton {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .socialsButton:hover {
+      background-color: #0056b3;
+    }
+
+    .socialsButton i {
+      margin-right: 5px;
+    }
+
 
         .contact-info {
             margin: 0;
@@ -105,10 +123,36 @@
         <a href="Hobbies.html">Hobbies</a>
         </div>
 
+
+
+        <!--All footer content-->
+
     <div class="footer">
-        <button id="MailButton">
-            <span class="material-symbols-outlined">mail</span>
-        </button>
+        <!--Contact page-->
+        <button id="MailButton" class="socialsButton">
+            <i class="fa-solid fa-envelope"></i> Mail
+          </button>
+          
+          <button id="twitterLogo" class="socialsButton">
+            <i class="fa-brands fa-x-twitter"></i> Twitter
+          </button>
+          
+          <button id="facebookLogo" class="socialsButton">
+            <i class="fa-brands fa-facebook"></i> Facebook
+          </button>
     </div>
+
+    <!--Javascript for Button logic-->
+    <script>
+        document.getElementById("twitterLogo").addEventListener("click", function(){
+            //Linkinig
+            window.location.href = "https://twitter.com/jacob39151215"
+        })
+
+        //Links out to personal twitter account
+        document.getElementById("facebookLogo").addEventListener("click", function(){
+            window.location.href = "https://www.facebook.com/profile.php?id=100087408526333"
+        })
+    </script>
 </body>
 </html>

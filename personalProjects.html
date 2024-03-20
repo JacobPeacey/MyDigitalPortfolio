@@ -158,6 +158,54 @@
         .closebtn:hover {
             color: black;
         }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 10px; /* Added margin for spacing */
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+        }
+
+        .dropdown-button {
+            background-color: transparent;
+            color: #333;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .dropdown-button:hover {
+            color: #000; /* Change color on hover */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 1;
+            margin-top: 5px;
+        }
+
+        .dropdown-option {
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .dropdown-option:hover {
+            background-color: #f2f2f2;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
     </style>
 </head>
 <body>
@@ -167,12 +215,19 @@
     <a href="AboutMe.html">About</a>
     <a href="MyDigitalCV.html">My CV</a>
     <a href="FormSubmitted.html">Contact</a>
-    <a href="GeneralProjectsLandingPage.html" class="active">Projects</a>
     <a href="Trips.html">Trips and Experiences</a>
     <a href="Qualifications.html">Qualifications</a>
     <a href="Work.html">Employment and Work Experience</a>
     <a href="Hobbies.html">Hobbies</a>
 </div>
+
+<div class="dropdown">
+    <button class="dropdown-button">Projects</button>
+    <div class="dropdown-content">
+        <a href="appStoreProductPages/reflectionsproductpage.html" class="dropdown-option">Reflections</a>
+        <a href="appStoreProductPages/timingsproductpage.html" class="dropdown-option">Timings</a>
+
+    </div>
 
 <div class="RectangleforDescPersonalProjects">
     <p>Knowing I had that so called "obsession", and knowing I wanted to do something with it, on top of having a desire to learn SwiftUI, I set out on the journey of self-teaching myself a whole new language with entirely new concepts I had never heard of before... I found myself asking questions which feel dumb to me now, like:</p>
