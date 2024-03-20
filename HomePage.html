@@ -308,11 +308,23 @@
         </div>
     </footer>
 
+
     <!-- Personal Social Media Links -->
+
+    <!--Overching Content styling-->
     <div class="footer-content socials">
+
+        <!--Twitter FA logo-->
         <button id="twitterLogo" class="socialsButton">
             <i class="fa-brands fa-x-twitter"></i>
         </button>
+
+        <!--Facebook FA Logo-->
+        <button id="facebookLogo" class="socialsButton">
+            <!--FA <i for Facebook logo-->
+                <i class="fa-brands fa-facebook"></i>
+        </button>
+
     </div>
 
     <!-- JavaScript -->
@@ -323,6 +335,12 @@
         })
             //Links out to personal twitter account
         document.getElementById("twitterLogo").addEventListener("click", function(){
+            //Linkinig
+            window.location.href = "https://twitter.com/jacob39151215"
+        })
+
+        //Links out to personal twitter account
+        document.getElementById("facebookLogo").addEventListener("click", function(){
             window.location.href = "https://twitter.com/jacob39151215"
         })
             //Directs to personal Projects page
@@ -354,8 +372,6 @@
             window.location.href = "theonlineworld.html";
         });
     </script>
-    
-
 </body>
 
 </html>
