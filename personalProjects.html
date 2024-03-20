@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,21 +15,20 @@
         }
 
         .navbar a {
-    display: inline-block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-    transition: transform 0.3s ease-in-out;
-}
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s ease-in-out;
+        }
 
-.navbar a:hover {
-    transform: scale(1.1);
-}
+        .navbar a:hover {
+            transform: scale(1.1);
+        }
 
-.navbar a.active {
-    font-weight: bold;
-}
-
+        .navbar a.active {
+            font-weight: bold;
+        }
 
         .navbar a i {
             margin-right: 5px;
@@ -43,7 +43,6 @@
             background-color: #000000;
             color: white;
         }
-
 
         h1,
         h2 {
@@ -87,7 +86,11 @@
             color: blue;
         }
 
-       
+        .ImageLayout {
+            /* Layout */
+            height: auto;
+        }
+
         /* New styles for the form */
         #myForm {
             max-width: 600px;
@@ -158,13 +161,36 @@
         .closebtn:hover {
             color: black;
         }
+        .thumbnail-button {
+            border: none;
+            background: none;
+            padding: 0;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .thumbnail-button img {
+            width: 100%;
+            display: block;
+        }
+
+        .thumbnail-button:hover {
+            transform: scale(1.1);
+        }
+        .projectsButton {
+            height: 100px;
+            width: 200px;
+        }
+        .socialsButton {
+            height: 50px;
+            width: 50px;
+        }
+
+        /* Dropdown styles */
         .dropdown {
             position: relative;
             display: inline-block;
             margin-right: 10px; /* Added margin for spacing */
-            font-weight: bold;
-            float: right;
-            font-size: 22px;
         }
 
         .dropdown-button {
@@ -205,11 +231,11 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
-
     </style>
 </head>
 <body>
 
+<!-- Navbar -->
 <div class="navbar">
     <a href="HomePage.html">Home</a>
     <a href="AboutMe.html">About</a>
@@ -221,26 +247,29 @@
     <a href="Hobbies.html">Hobbies</a>
 </div>
 
+<!-- Dropdown -->
 <div class="dropdown">
     <button class="dropdown-button">Projects</button>
     <div class="dropdown-content">
         <a href="appStoreProductPages/reflectionsproductpage.html" class="dropdown-option">Reflections</a>
         <a href="appStoreProductPages/timingsproductpage.html" class="dropdown-option">Timings</a>
-
     </div>
+</div>
 
+<!-- Project Description -->
 <div class="RectangleforDescPersonalProjects">
-    <p>Knowing I had that so called "obsession", and knowing I wanted to do something with it, on top of having a desire to learn SwiftUI, I set out on the journey of self-teaching myself a whole new language with entirely new concepts I had never heard of before... I found myself asking questions which feel dumb to me now, like:</p>
-
+    <p>Knowing I had that so-called "obsession," and knowing I wanted to do something with it, on top of having a desire to learn SwiftUI, I set out on the journey of self-teaching myself a whole new language with entirely new concepts I had never heard of before... I found myself asking questions which feel dumb to me now, like:</p>
     <ul>
-        <li>What's a VStack?</li>
-        <li>Why do I have to declare a variable like that, and not like the ways I was used to?</li>
+        <li>What's the difference between a VStack and a HStack?</li>
+        <ul>
+            <li>It dictates the vertical and horizontal alignment of an object or textfield</li>
+        </ul>
+        <li>What's the difference between a public and private variable?</li>
     </ul>
-</div>
-<div>
-    <p>Only after having read what felt like a million words of Apple Developer Support documentation and seemingly watched a thousand hours of toutorials on youtube did  start to grasp those aforementinoed concepts. </p>
+    <p>Only after having read what felt like a million words of Apple Developer Support documentation and seemingly watched a thousand hours of tutorials on YouTube did I start to grasp those aforementioned concepts.</p>
 </div>
 
+<!-- Footer -->
 <div class="footer">
     <p>Footer</p>
     <a href="Sitemap.html" style="color: white;">Sitemap</a>
