@@ -154,6 +154,15 @@
     .closebtn:hover {
         color: black;
     }
+
+    .thumbnail-button {
+            border: none;
+            background: none;
+            padding: 0;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
 </style>
 
 <div class="navbar">
@@ -168,11 +177,51 @@
         <a href="Work.html">Work experience and employment</a>
     </div>
 <body>
- 
-    <ul>
-        <li> The Online World -</li>             <a href="onlinewrld.html">Course Summary and Work Samples</a>
-        <li> Creating Digital Graphics</li>         <a href="CDG.html">Course Summary and Work Samples</a>
-        <li> Computer Networks</li>                      <a href="Comptnet.html">Course Summary and Work Samples</a>
-        <li> Technology Systems</li>                             <a href="TechSys.html">Course Summary and Work Samples</a>
-    </ul>
+<h3>
+    My units
+</h3>
+    <br>
+<P>
+    My College course qualification is amde up of 4 individual units. I have attached buttons so you can move to the individual units page
+</P>
+    <br>
+    <div class="courseThumbnails">
+        <!-- Course buttons -->
+        <button id="CDGButton" class="thumbnail-button">
+            <img src="assets/courseThumbnails/creatingdigitalgraphics.jpg" alt="Button for Creating Digital Graphics">
+        </button>
+    
+        <button id="CNButton" class="thumbnail-button">
+            <img src="assets/courseThumbnails/computernetworks.jpg" alt="Button for computer Networks">
+        </button>
+        
+        <button id="TOWButton" class="thumbnail-button">
+            <img src="assets/courseThumbnails/theonlineworld1.jpg" alt="Button for the online World">
+        </button>
+    
+        <button id="TSButton" class="thumbnail-button">
+            <img src="assets/courseThumbnails/technologysystems.jpg" alt="Button for Technology Systems">
+        </button>
+
+    </div>
+
+    <!--Button pointng JS-->
+
+    <script>
+        document.getElementById("CDGButton").addEventListener("click", function() {
+            window.location.href = "creatingGraphics.html"
+        })
+
+        document.getElementById("CNButton").addEventListener("click", function() {
+            window.location.href = "computerNetworks.html"
+        })
+
+        document.getElementById("TOWButton").addEventListener("click", function() {
+            window.location.href = "theonlineWorld.html"
+        })
+
+        document.getElementById("TSButton").addEventListener("click", function() {
+            window.location.href = "technologySystems.html"
+        })
+    </script>
 </body>
