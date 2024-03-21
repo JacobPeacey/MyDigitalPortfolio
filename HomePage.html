@@ -190,9 +190,11 @@
 
         /* Dropdown styles */
         .dropdown {
-            position: relative;
             display: inline-block;
-            margin-right: 10px; /* Added margin for spacing */
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s ease-in-out;
         }
 
         .dropdown-button {
@@ -202,6 +204,52 @@
             padding: 10px;
             cursor: pointer;
             transition: color 0.3s ease-in-out;
+        }
+
+        .dropdown-button:hover {
+            color: #000; /* Change color on hover */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 1;
+            margin-top: 5px;
+        }
+
+        .dropdown-option {
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .dropdown-option:hover {
+            background-color: #f2f2f2;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        <!--Second dropdown content-->
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 1px; /* Added margin for spacing */
+        }
+
+        .dropdown-button {
+            background-color: transparent;
+            color: #333;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: color 0.5s ease-in-out;
         }
 
         .dropdown-button:hover {
@@ -246,7 +294,8 @@
         <a href="MyDigitalCV.html">My CV</a>
         <a href="Work.html">Employment and Work Experience</a>
         <a href="Hobbies.html">Hobbies</a>
-        <!-- Improved Dropdown in Navbar -->
+
+            <!--1st Dropdown Button-->
 <div class="dropdown">
     <button class="dropdown-button" aria-haspopup="true" aria-expanded="false">
         Projects <span class="dropdown-icon">&#9662;</span>
@@ -255,6 +304,23 @@
         <a href="collegeProjects.html" class="dropdown-option">College Projects</a>
         <a href="personalProjects.html" class="dropdown-option">Personal Projects</a>
     </div>
+</div>
+<!--2nd Dropdown button-->
+
+
+<div class="dropdown">
+    <button class="dropdown-button" aria-haspopup="true" aria-expanded="false">
+        Units <span class="dropdown-icon">&#9662;</span>
+    </button>
+    <div class="dropdown-content" aria-hidden="true">
+        <!--<a hrefs for individual unit pages-->
+            <a href="computerNetworks.html">Computer Networks</a>
+            <a href="digitalPortfolio.html">Digital Portfolio</a>
+            <a href="creatingGraphics.html">Creating digital Graphics</a>
+            <a href="theonlineWorld.html">The Online World</a>
+            <a href="technologySystems.html">Technology Systems</a>
+    </div>
+
 </div>
 
              <!--  End Dropdown in Navbar -->
@@ -266,33 +332,17 @@
             <div>
                 <p>I have created the quick link buttons to allow you to quickly access the units in my College Course. Alternatively, you can use the navigation bar above to navigate to the corresponding pages.</p>
                     </div>
-            <div class="courseThumbnails">
-                <!-- Course buttons -->
-                <button id="CDGButton" class="thumbnail-button">
-                    <img src="assets/courseThumbnails/creatingdigitalgraphics.jpg" alt="Button for Creating Digital Graphics">
-                </button>
             
-                <!-- Other course buttons -->
-                <button id="CNButton" class="thumbnail-button">
-                    <img src="assets/courseThumbnails/computernetworks.jpg" alt="Button for computer Networks">
-                </button>
-                
-                <button id="TOWButton" class="thumbnail-button">
-                    <img src="assets/courseThumbnails/theonlineworld1.jpg" alt="Button for the online World">
-                </button>
-            
-                <button id="TSButton" class="thumbnail-button">
-                    <img src="assets/courseThumbnails/technologysystems.jpg" alt="Button for Technology Systems">
-                </button>
-            </div>
 
             <!--Button for college projects-->
             <button id="cPd2" class="projectsButton">
+                <!--Redesign Pending-->
                 <img src="assets/logos/collegeProjects.jpg" alt="">
             </button>
 
             <!--Button for college projects-->
             <button id="pPD2" class="projectsButton">
+                <!--Redesign Pending-->
                 <img src="assets/logos/personalProjectD2.jpg" alt="button for personal projects logo">
             </button>
         </div>
@@ -305,11 +355,6 @@
             <button id="MailButton">
                 <span class="material-symbols-outlined">mail</span>
             </button>
-
-
-            <!--Button for feedback survey-->
-            
-
         </div>
     </footer>
 
