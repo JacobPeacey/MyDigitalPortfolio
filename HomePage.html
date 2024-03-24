@@ -351,10 +351,13 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <!-- Place your footer content here -->
+           <!--Button for js mail button-->
             <button id="MailButton">
                 <span class="material-symbols-outlined">mail</span>
             </button>
+
+            <!--Button for My blog Page-->
+           
         </div>
     </footer>
 
@@ -363,8 +366,11 @@
 
     <!--Overching Content styling-->
     <div class="footer-content socials">
-        
 
+
+        <button id="devDiary">
+            <i class="fa-solid fa-blog"></i>
+        </button>
 
         <button id="feedbackSurvey">
             <!--Font Awesome logo-->
@@ -391,6 +397,10 @@
         document.getElementById("feedbackSurvey").addEventListener("click", function() {
                     /*Link out to leave Portfolio Feedback as requested in the brief*/
             window.location.href = "https://forms.office.com/e/EhpsGySHkj"
+        })
+
+        document.getElementById("devDiary").addEventListener("click", function(){
+                window.location.href = "devDiary.html"
         })
 
         document.getElementById("cPd2").addEventListener("click", function(){
