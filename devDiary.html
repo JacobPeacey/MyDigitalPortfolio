@@ -1,52 +1,90 @@
 <!DOCTYPE html>
-<title>My Blog</title>
-<style>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/1835d3dc9f.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Soft background color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-    .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #007bff;
-  border: 2px solid #007bff;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
+        .container {
+            text-align: center;
+            padding: 30px;
+            background-color: #fff; /* White background */
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
 
-.btn:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
-}
-</style>
-<html>
-    <div>
-        <h1>My Blog</h1>
-    </div>
-    <br>
-    <div>
-        <h2>
-            My persobal Blog
-        </h2>
-        <br>
+        h1 {
+            color: #007bff; /* Primary color */
+        }
+
+        h2 {
+            color: #0056b3; /* Darker shade of primary color */
+        }
+
+        p {
+            color: #333; /* Dark gray text color */
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff; /* Primary color */
+            border: 2px solid #007bff; /* Primary color */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+            text-decoration: none; /* Remove underline */
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Darker shade of primary color */
+            border-color: #0056b3; /* Darker shade of primary color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Developer Diary</h1>
         <div>
-            <p>I had divided my blog pages into 2 sections. One for my personal vposts, and then one dedicateed to my professional posting.</p>
+            <p>My diary has been sectioned into 2 categories. Personal and Professional.</p>
+            <br>
+            <p>The personal Section is for Post in my personal Life and the Professional section covers my carrer and education</p>
         </div>
         <br>
+        <!-- Container for button directing to Personal Blog -->
+        <div>
+            <a href="personalBlog.html" class="btn">Personal Blog</a>
+        </div>
+        <br>
+        <!-- Container for button directing to Professional Blog -->
+        <div>
+            <a href="professionalBlog.html" class="btn">Professional Blog</a>
+        </div>
+        <br>
 
-        <!--Container for button directing to personal Blog-->
+        <!--Container directing to the homepage-->
         <div>
-            <button class="btn">
-                <a href="personalBlog.html">My Personal Blog</a>
-            </button>
+            <a href="HomePage.html" class="btn"><i class="fas fa-home"></i> Home</a>
         </div>
-<br>
-        <!--Container for button directing to Professional Blog-->
-        <div>
-            <button class="btn">
-                <a href="ProfessionalBlog.html">Professional Blog</a>
-            </button>
-        </div>
-    </div>
+        
+        
+          
+    
+</body>
 </html>

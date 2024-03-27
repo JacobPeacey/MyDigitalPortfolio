@@ -9,23 +9,14 @@
     <style>
         /* Define button style */
         .shadow-button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            transition-duration: 0.4s;
+            background-color: #f4f4f4; /* Same as tile background */
+            padding: 20px; /* Same padding as tile */
+            border: none; /* Remove border */
+            border-radius: 8px; /* Same border radius as tile */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Same box shadow as tile */
+            transition: transform 0.3s ease;
             cursor: pointer;
-            border-radius: 8px;
-        }
-
-        /* Add shadow on button hover */
-        .shadow-button:hover {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: left;
         }
 
         /* Apply Roboto font to body */
@@ -34,6 +25,8 @@
             font-size: 16px;
             line-height: 1.6;
             color: #333;
+            margin: 0;
+            padding: 0;
         }
 
         /* Apply styles to headings */
@@ -55,16 +48,58 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* Grid layout for tiles */
+        .tile-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        /* Individual tile */
+        .tile {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Tile hover effect */
+        .tile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
     <!-- Title section -->
     <div class="titleText">
         <h1>My Professional Blog - Developer Diaries</h1>
-        <!-- Button for "My Apple Vision Pro Lab Experience" -->
-        <div class="shadow-button">
-            <a href="visionProLabExperience.html">My Apple Vision Pro Lab Experience</a>
-        </div>
     </div>
+
+    <!-- Button for "My Apple Vision Pro Lab Experience" -->
+    <button id="AVPlab" class="shadow-button">
+        <h3>Apple Vision Pro Lab</h3>
+        <p>Read about my Apple vision Pro developer Lab experience</p>
+    </button>
+
+    <!-- Tiles section -->
+    <div class="tile-container">
+        <!-- Example tile 2 -->
+        <div class="tile">
+            <h3>Tile 2</h3>
+            <p>This is another example of a tile.</p>
+        </div>
+
+        <!-- Add more tiles as needed -->
+    </div>
+    <script>
+        document.getElementById("AVPlab").addEventListener("click", function() {
+            // Open default email client with specified email address
+            window.location.href = "visionProLabExperience.html";
+        });
+    </script>
 </body>
 </html>
