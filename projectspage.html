@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front-end Developer Portfolio</title>
     <style>
+        /* General Styles */
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
@@ -13,11 +14,18 @@
             line-height: 1.6;
         }
 
+        /* Navigation Styles */
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
         .navbar a {
             display: inline-block;
-            padding: 10px;
+            padding: 10px 20px;
             text-decoration: none;
-            color: #333;
+            color: #fff;
             transition: transform 0.3s ease-in-out;
         }
 
@@ -29,22 +37,14 @@
             font-weight: bold;
         }
 
-        .navbar a i {
-            margin-right: 5px;
+        /* Main Content Styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
-        .navbar a:hover {
-            background-color: #ffff;
-            color: black;
-        }
-
-        .navbar a.ac-color {
-            background-color: #000000;
-            color: white;
-        }
-
-        h1,
-        h2 {
+        h1, h2, h3, h4, h5 {
             color: #000000;
             text-align: center;
         }
@@ -53,146 +53,36 @@
             margin-bottom: 1.5em;
         }
 
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            margin-bottom: 1.5em;
-        }
-
-        footer {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .footer-content {
-            display: flex;
-        }
-
-        .socials {
-            margin-right: 20px;
-        }
-
-        .contact-info {
-            margin: 0;
-        }
-
-        .custom-link {
-            color: red;
-            text-decoration: none;
-        }
-
-        .custom-link:hover {
-            color: blue;
-        }
-
-        /* New styles for the form */
-        #myForm {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        #myForm div {
-            margin-bottom: 20px;
-        }
-
-        #myForm label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        #myForm input[type="text"],
-        #myForm textarea,
-        #myForm select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .timingslogo {
-            height: 75px;
-            width: 75px;
-            flex: 0 0 auto; /* Don't grow, don't shrink, initial width */
-        }
-
-        .timingslogoTxt {
-            flex: 1; /* Grow to fill remaining space */
-            margin-left: 20px; /* Adjust this margin as needed */
-        }
-
-        #myForm input[type="submit"],
-        #myForm button {
-            background-color: #3e3d42;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-right: 10px; /* Added margin to separate the buttons */
-        }
-
-        #myForm input[type="submit"]:hover,
-        #myForm button:hover {
-            background-color: #000;
-        }
-
-        /* The alert message box */
-        .alert {
-            padding: 20px;
-            background-color: #f44336; /* Red */
-            color: white;
-            margin-bottom: 15px;
-        }
-
-        /* The close button */
-        .closebtn {
-            margin-left: 10px;
-            color: white;
-            font-weight: bold;
-            float: right;
-            font-size: 22px;
-            line-height: 20px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        /* When moving the mouse over the close button */
-        .closebtn:hover {
-            color: black;
-        }
-
-        .maintext {
-            height: 100;
-            width: 175;
-        }
-
+        /* Button Styles */
         .customButton {
+            display: inline-block;
             border-radius: 10px;
-            padding: 10px;
+            padding: 10px 20px;
             margin: 10px;
             background-color: #000000;
             color: #FFFFFF;
             font-weight: bold;
-            opacity: 1;
-            transition: 1s;
+            text-decoration: none;
+            transition: background-color 0.5s, color 0.5s;
         }
 
         .customButton:hover {
-            cursor: pointer;
-            background-color: #000000;
-            opacity: 0.5;
-            transition: 1s;
-            color: #FFDED4;
+            background-color: #FFFFFF;
+            color: #000000;
         }
 
-        .myWorkflow {
-            /*Styling params for the my workflow text*/
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: right;
+        }
+
+        /* Responsive Image Styles */
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -206,103 +96,59 @@
         <a href="Hobbies.html">Hobbies</a>
         <a href="Work.html">Work Experience</a>
     </div>
-    <br> 
-    <!--adds spacing directly after the navigation bar-->
-    
 
-    <!--General text-->
-    <div class="maintext">
-        During my spare time, both within and beyond college, I have dedicated significant hours to cultivating my portfolio, encompassing projects relevant to my overall college course and its units, as well as personal endeavours such as my Live App Store Project Timings. This entails a diverse range of undertakings, including projects within course units such as the Gaurdians of the galaxy poster remake in Creating Digital Graphics, or structured assignments like the First Music Computer Networks design task.
-    </div>
-    <!--Adds a break-->
-    <br>
+    <div class="container">
+        <h1>Front-end Developer Portfolio</h1>
 
-    <div>
-        <!--My design and development Workflow-->
-        <h3> My design and development workflow</h3>
-        <br>
-        <p> 
-            As i develop for both HTML and the Apple platform. I use a design workflow process which i know works well with both. The process i use works great until im given a brief, or strict design documentaation i need to stick to.
+        <!-- Introduction -->
+        <p>
+            Welcome to my portfolio! In my spare time, I've dedicated significant hours to cultivating a diverse range of projects relevant to my college course and personal endeavors. Let's take a look at some highlights.
         </p>
-        <br> 
-        <div class="myWorkflow">
-            <!--Title-->
-            <h3> 
-                Rapid Application Design and development
-            </h3>
-            <br>
 
-            <!--My use of RAD-->
+        <!-- Design and Development Workflow -->
+        <h2>My Design and Development Workflow</h2>
+        <p>As a developer for both HTML and the Apple platform, I follow a design workflow that is adaptable and effective. Here's an overview:</p>
+        <div class="workflow">
+            <!-- Stages of RAD -->
+            <h3>Rapid Application Design and Development (RAD)</h3>
             <p>
-                I use a form of workflow called Rapid applcation design and development. RAD focuses more on ongoing development and developing offthe bnack of customer feedback, as opposed to strict design plans and wireframes.
+                RAD focuses on ongoing development and customer feedback rather than strict design plans. It consists of four key stages:
             </p>
-            <br> 
-
-            <!--Title for the 4 stages of RAD-->
-            <h4>
-                The 4 stages of RAD
-            </h4>
-            <br>
-
-            <!--Stage 1-->
-            <h5>
-                Requirement Gathering
-            </h5>
-            <p>
-                The requirement gathering stage of RAD involves liasing with clients, making attemps to build a picture as to what the client actually wants out of the job. In my Opinion, requirement gathering is the most significant element of the workflow. I think this becuase if you dont have the right idea of what the client wants, you run the risk of developing a poor product which leaves the client with a bad reputation of the company. This in the long run may harm your client relationship or business as a whole
-            </p>
-            <br>
-        
-            <!--Stage 2-->
-            <h5>
-                Rapid Prototyping
-            </h5>
-            <br>
-            <p>
-                The Rapid prototyping stage of Raid application development involves teams working together to create a working prototype model of the product, usually the UI in the mobile app development Space.
-            </p>
-
-            <!--Stage 3-->
-            <h5>
-                Construction and deployment
-            </h5>
-            <br>
-            <p>
-              Construction and deployment is essentially an extension of the RP stage. Construction and deployment involves those same teams taking the user feedback that they recieved from the Rapid prototyping stage and improving that beta product into a functioning working product.
-                Deployment is the stage where the product or service is then made avalliable to the customer, or made distributable on a public platfor. In my case, the iOS app Store.        </p>
+            <ol>
+                <li><strong>Requirement Gathering:</strong> This stage involves gathering client requirements to ensure alignment with their needs and expectations.</li>
+                <li><strong>Rapid Prototyping:</strong> Teams collaborate to create working prototypes, often focusing on UI design.</li>
+                <li><strong>Construction and Deployment:</strong> Based on user feedback, the prototype is refined and deployed, ready for distribution.</li>
+            </ol>
         </div>
-    </div>
 
-    <div>
-        <h1> My personal projects</h1>
-    <br>
-        <button id="tDB">
-            <img src="assets/logos/timingslogo.png">
+        <!-- Personal Projects -->
+        <h2>My Personal Projects</h2>
+        <p>Explore some of the projects I've worked on:</p>
+        <button class="customButton" id="tDB">
+            <img src="assets/logos/timingslogo.png" alt="Timings Logo" class="responsive-img">
         </button>
-    </div> 
+        <br>
+        <button class="customButton" id="rPB">
+            <img src="reflectionsPlaceholder.jpg">
+        </button>
 
-
-    
-
-
-
-
-
-
-    <!--Holds neccessary JS code-->
-    <script>
-
-        //JS button logic to allow link-out on button press
-        document.getElementById("tDB").addEventListener("click", function(){
-            window.location.href = "https://apps.apple.com/gb/app/syncedtimings/id6453356139"
-        })
-
-        
-
-    </script>
-    <div class="footer">
-        <p>© Jacob Peacey 2024</p>
-        <a href="Sitemap.html" style="color: white;">Sitemap</a>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Jacob Peacey</p>
+        <a href="Sitemap.html">Sitemap</a>
+    </footer>
+
+    <!-- JavaScript for Button Functionality -->
+    <script>
+        document.getElementById("tDB").addEventListener("click", function(){
+            window.location.href = "https://apps.apple.com/gb/app/syncedtimings/id6453356139";
+        });
+
+        document.getElementById("rPB").addEventListener("click", function(){
+            window.location.href = "https://apps.apple.com/gb/app/syncedtimings/id6453356139";
+        });
+    </script>
 </body>
 </html>
