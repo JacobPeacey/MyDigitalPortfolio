@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <p>
-            This will be my trips page
-        </p>
+        <div class="navbar">
+            <a href="HomePage.html" class="active">Home</a>
+            <a href="aboutMe.html">About</a>
+            <a href="MyDigitalCV.html">My CV</a>
+            <a href="Trips.html">Trips and Experiences</a>
+            <a href="examresultsandQualifications.html">Qualifications</a>
+            <a href="MyDigitalCV.html">My CV</a>
+            <a href="Work.html">Employment and Work Experience</a>
+            <a href="Hobbies.html">Hobbies</a>
         <style>
             body {
                 margin: 0;
                 font-family: 'Arial', sans-serif;
                 background-color: #f8f8f8;
-                color: #333;
+                color: white;
                 line-height: 1.6;
             }
     
             .navbar {
-                background-color: #3e3d42;
+                background-color:white;
                 overflow: hidden;
             }
     
@@ -162,15 +168,35 @@
                 height: 100px;
                 width: 100px;
             }
-        </style>
-      <body>
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photos from Trips</title>
-    <style>
+            .navbar a {
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            transform: scale(1.1);
+        }
+
+        .navbar a.active {
+            font-weight: bold;
+        }
+
+        .navbar a i {
+            margin-right: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #ffff;
+            color: black;
+        }
+
+        .navbar a.ac-color {
+            background-color: white;
+            color: white;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -190,11 +216,11 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            margin: 30px auto;
-            max-width: 1200px;
+            margin:  auto;
+            max-width: auto;
         }
         .grid-item {
-            margin: 10px;
+         
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
             overflow: hidden;
             border-radius: 8px;
@@ -207,10 +233,7 @@
         .grid-item:hover img {
             transform: scale(1.1);
         }
-    </style>
-</head>
-<body>
-
+        </style>
 <h2>Photos from Trips</h2>
 <p>I have been to some pretty stunning places on my travels and have decided to share some photos.</p>
 
