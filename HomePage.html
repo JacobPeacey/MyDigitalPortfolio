@@ -62,14 +62,17 @@
             margin-bottom: 1.5em;
         }
 
-        footer {
-            display: flex;
-            justify-content: flex-end;
-        }
+        .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #342f44;
+      color: white;
+      text-align: center;
+    }
 
-        .footer-content {
-            display: flex;
-        }
+       
 
         .socials {
             margin-right: 20px;
@@ -349,17 +352,27 @@
     </div>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-           <!--Button for js mail button-->
-            <button id="MailButton">
-                <span class="material-symbols-outlined">mail</span>
-            </button>
 
-            <!--Button for My blog Page-->
-           
+        <div class="footer">
+            <button id="feedbackSurvey">
+                <!--Font Awesome logo-->
+                <i class="fa-sharp fa-light fa-square-poll-horizontal"></i>
+            </button>
+    
+            
+            <!--Twitter FA logo-->
+            <button id="twitterLogo" class="socialsButton">
+                <i class="fa-brands fa-x-twitter"></i>
+            </button>
+    
+            <!--Facebook FA Logo-->
+            <button id="facebookLogo" class="socialsButton">
+                <!--FA <i for Facebook logo-->
+                    <i class="fa-brands fa-facebook"></i>
+            </button>
+    
         </div>
-    </footer>
+
 
 
     <!-- Personal Social Media Links -->
@@ -372,23 +385,7 @@
             <i class="fa-solid fa-blog"></i>
         </button>
 
-        <button id="feedbackSurvey">
-            <!--Font Awesome logo-->
-            <i class="fa-sharp fa-light fa-square-poll-horizontal"></i>
-        </button>
-
-        
-        <!--Twitter FA logo-->
-        <button id="twitterLogo" class="socialsButton">
-            <i class="fa-brands fa-x-twitter"></i>
-        </button>
-
-        <!--Facebook FA Logo-->
-        <button id="facebookLogo" class="socialsButton">
-            <!--FA <i for Facebook logo-->
-                <i class="fa-brands fa-facebook"></i>
-        </button>
-
+       
     </div>
 
     <!-- JavaScript -->

@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<style>
+<html>
+<head>
+  <title>Vision Pro Developer Lab - My Experience</title>
+  <style>
     .blognavigation {
-      /*Blog Navigation Button Styling*/
-      /*Hyperlinks for now*/
+      /* Blog Navigation Button Styling */
+      /* Hyperlinks for now */
     }
-</style>
-<title>Vision Pro Developer Lab - My experience</title>
-<button>
-    <a href="ProfessionalBlog.html">back</a>
-    <!--Returns to blog Homepage-->
-</button>
+    
+    .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+  </style>
+</head>
+<body>
+
+<h4>Apple Vision Pro Developer Lab</h4>
+
+<br>
+<!-- Actor wearing VP -->
+<div>
+ <img src="data:image/jpeg;base64,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">
+</div>
+
+<div class="mainBlogContent">
+  <p>
+    As an active Apple Developer program member, I was given the opportunity to attend a Lab which is focused on application development for the Apple Vision Pro. Unfortunately, due to confidentiality requirements, I am unable to comment on what was discussed in the lab. Nor can I share photos of what I worked on in the lab.
+    However, I will leave the link to the Lab page from the official developer portal.
+  </p>
+  <br>
+  <a href="https://developer.apple.com/news/?id=5nn2hddv">Vision Pro Developer Lab</a>
+</div>
+<br>
+
+<button class="btn">Back</button>
+
+
+</body>
+</html>

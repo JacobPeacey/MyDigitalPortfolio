@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <title>My Blog</title>
+<style>
 
+    .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+</style>
 <html>
     <div>
         <h1>My Blog</h1>
@@ -18,15 +37,15 @@
 
         <!--Container for button directing to personal Blog-->
         <div>
-            <button id="personalBlogButton">
-                <a href="blogPages/personalProjects.html">My Personal Blog</a>
+            <button class="btn">
+                <a href="personalBlog.html">My Personal Blog</a>
             </button>
         </div>
-
+<br>
         <!--Container for button directing to Professional Blog-->
         <div>
-            <button id="professionalBlogButton">
-                <a href="blogPages/ProfessionalBlog.html">My Professional Blog</a>
+            <button class="btn">
+                <a href="ProfessionalBlog.html">Professional Blog</a>
             </button>
         </div>
     </div>
